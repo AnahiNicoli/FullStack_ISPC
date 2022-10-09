@@ -1,14 +1,74 @@
-
-
+/** Estilo de página index.html**/
 
 .ofertas{
-   background-color: aquamarine;
-   color: tomato;
-}
+    background-color: aquamarine;
+    color: tomato;
+ }
+ 
+ .oferta1{
+     width: 150 em;
+     height: 150 em;
+     background-color: blue;
+     
+ }
 
-.oferta1{
-    width: 150 em;
-    height: 150 em;
-    background-color: blue;
+
+
+
+/** Estilo de página quienes_somos.html**/
+.header_quienes_somos{
+    display: flex;
+    background-color: rgb(121, 119, 117);
+    justify-content: space-between;
+}
+.logo_easy_travel{
+    display: flex;
+    width: 5em;
+    height: 5em;
+    justify-content: left;
+}
+.nav_quienes_somos{
+    display: flex;
+    align-items: center;
+    
     
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    
+}
+nav ul a{
+
+    font-size: 1.4em;
+    text-decoration: none;
+    padding-right: 2em;
+    color: cornflowerblue;
+    transition: all .3s ease-in-out
+}
+
+nav ul a:hover{
+
+transform: scale(1.2);
+color:white;
+}
+
+h1 {
+    background: cornflowerblue;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(246, 244, 244);
+    justify-content: center;
+    
+}
+.nuestro_equipo{
+    background: rgb(168, 111, 130);
+    font-size: 2.5em;
+    text-align: right;
+    color: rgb(246, 244, 244);
+    justify-content: right;
+    
+}
+
