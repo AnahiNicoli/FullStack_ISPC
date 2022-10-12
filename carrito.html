@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ancho del dispositivo-->    
+
+    <title>Carrito</title>
+    
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+        ESTE de arriba ES la prueba BuTSTRAcptSsss no está activo ahorita entonces varias líneas de código quedan sin efecto -->  
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+    </header>
+
+   <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Vamos a realizar la compra</h2> <br>
+                    <h3 class="text"> Detalle de tu compra</h3>
+                    <br>
+                    <form id="procesar-pago" action="#">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente" minlength="5" maxlength="40" required pattern="[A-Za-z]"
+                                    placeholder="Ingresa tu nombre" >
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">D.N.I / L.C :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="number" class="form-control" id="dni" minlength="8" maxlength="8" required pattern="[0-9]"
+                                    placeholder="Ingresa tu DNI/LC" >
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="email" class="form-control" id="correo" minlength="5" maxlength="40" required pattern="[a-z@]+" placeholder="Ingresa tu correo" >
+                            </div>
+                                                
+                        </div>
+
+
+                        <div id="carrito" class="table-responsive">
+                            <table class="table" id="lista-compra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Destino</th> 
+                                        <td> Brasil </td>                                       
+                                        <th scope="col">Detalles</th>
+                                        <td> ver </td>  
+                                        <th scope="col">Precio</th>
+                                        <td> $3000 </td>  
+                                        <th scope="col">Cantidad</th>
+                                        <td> &nbsp 2 &nbsp</td>
+                                        <th scope="col">Sub Total</th>
+                                        <td> &nbsp$ 6000 &nbsp</td>
+                                        <th scope="col">BTN Eliminar</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="col">Destino</th> 
+                                        <td> Purmamarca </td>                                       
+                                        <th scope="col">Detalles</th>
+                                        <td> ver </td>  
+                                        <th scope="col">Precio</th>
+                                        <td> $ 4000 </td>  
+                                        <th scope="col">Cantidad</th>
+                                        <td> &nbsp 2 &nbsp </td>
+                                        <th scope="col">Sub Total</th>
+                                        <td> &nbsp(suma)&nbsp </td>
+                                        <th scope="col">BTN Eliminar</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="col">Destino</th> 
+                                        <td> Tucumán </td>                                   
+                                        <th scope="col">Detalles</th>
+                                        <td> ver </td>  
+                                        <th scope="col">Precio</th>
+                                        <td> $8000 </td>  
+                                        <th scope="col">Cantidad</th>
+                                        <td> &nbsp 2 &nbsp </td>
+                                        <th scope="col">Sub Total</th>
+                                        <td> &nbsp (suma)&nbsp </td>
+                                        <th scope="col">BTN Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- suma los totales -->
+                                </tr>
+
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">¿Tenés un cupón de descuento?</th>
+                                    <th scope="col">
+                                        <p id="descuento"></p>
+                                        <label for="descuento"></label> 
+                                        <input type="text" name="descuento" id="descuento" placeholder="a veeeeer" size="30" maxlength="20"/> </p>
+                                        
+                                    </th>
+                                    
+                                    <!-- resta el descuento -->
+                                </tr>
+
+                                
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="total"></p>
+                                    </th>
+                                    <!-- Debería dar el total -->
+                                </tr>
+
+                                
+
+                            </table>
+                        </div>
+                        
+
+                        <br>
+
+                        
+                        
+                        <br>
+
+                        
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="fin.compra.html" class="btn btn-success btn-block" id="procesar-compra">Finalizar compra</a>
+                            </div>
+
+                        
+
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- termina el listado de mis compras -->
+
+     </div>
+
+   
+</body>
+
+</html>
+</html>
