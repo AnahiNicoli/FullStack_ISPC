@@ -1,20 +1,12 @@
-## Ingresar nombre.
+## cargar carrito
 
-## Ingresar apellido
-
-## e-mail
-
-## Teléfono de contacto
+## método para verificar existencia de carrito del cliente
 
 ## ver lista de productos seleccionados con detalle, cantidad y costo.
 
 ## Eliminar productos del carrito.
 
-## Ver subtotal.
-
-## Ingresar descuento que reste el procentaje
-
-## Ver total con descuento.
+## Verificar descuento que reste el procentaje segúnn cliente
 
 ## Continuar comprando
 
