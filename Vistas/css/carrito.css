@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Menu de navegación */
+
+/* Header */
+
+/*main styling*/
+
+
+/* no tengo todos los tamaños pero los
+dejo planteados por si existen futuros cambios
+los tomo del css de P Solis*/ 
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* EL CONTAINER */
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+    background-color: rgb(255, 255, 255)
+}
+
+
+/* Footer 
+
+EL FOOTER DEBERÍA SER EN FONDO GRIS (VER CARTA DE COLOR DE LA MARCA) */
+
