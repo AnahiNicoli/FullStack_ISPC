@@ -8,18 +8,38 @@
 
     <title>Carrito</title>
     
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
     
-        ESTE de arriba ES la prueba BuTSTRAcptSsss no está activo ahorita entonces varias líneas de código quedan sin efecto -->  
-    <link rel="stylesheet" href="./css/style.css">
+        <!--ESTE de arriba ES el bootstrap linkeado A LA CARPETA, NO ONLINE, luego se puede cambiar-->  
+    <link rel="stylesheet" href="./css/carrito.css">
 
 </head>
-<body>
-    <header>
-    </header>
 
-   <main>
-        <div class="container">
+<body> 
+    <header>HOME</header>
+    <div>
+        <ul>
+            <li><a href="login/login.html">LOGIN</a></li>
+            <li>EMPRESA
+                <ul>
+                    <li><a href="empresa/contactos.html">CONTACTO</a></li>
+                    <li><a href="empresa/diferentes.html">POR QUÉ ELEGIRNOS</a></li>
+                    <li><a href="empresa/equipo.html">EQUIPO</a></li>
+                    <li><a href="empresa/mision.html">MISIÓN Y VISIÓN</a></li>
+                    <li><a href="empresa/politicas.html">POLÍTICAS</a></li>
+                    <li><a href="empresa/preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="empresa/quienes.html">QUIENES SOMOS</a></li>
+                </ul>
+            </li>
+            <li><a href="servicios/asociados.html">SERVICIOS</a></li>
+            <li><a href="productos/catalogo.html">PRODUCTOS</a></li>
+        </ul>
+    </div>
+<!--del archivo de P. Solís--> 
+
+
+    <main>
+        <div class="container-fluid"> <!--fluid hace que se pegue al margen-->
             <div class="row mt-3">
                 <div class="col">
                     <h2 class="d-flex justify-content-center mb-3">Vamos a realizar la compra</h2> <br>
@@ -58,10 +78,8 @@
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
                                 <input type="email" class="form-control" id="correo" minlength="5" maxlength="40" required pattern="[a-z@]+" placeholder="Ingresa tu correo" >
-                            </div>
-                                                
+                            </div>              
                         </div>
-
 
                         <div id="carrito" class="table-responsive">
                             <table class="table" id="lista-compra">
@@ -109,9 +127,7 @@
                                     </tr>
 
                                 </thead>
-                                <tbody>
-
-                                </tbody>
+                                
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
                                     <th scope="col">
@@ -137,7 +153,7 @@
                                     <th colspan="4" scope="col" class="text-right">TOTAL :</th>
                                     <th scope="col">
                                         <p id="total"></p>
-                                    </th>
+                                    </th>+++++
                                     <!-- Debería dar el total -->
                                 </tr>
 
@@ -147,23 +163,16 @@
                         </div>
                         
 
+                        <br>                        
                         <br>
-
-                        
-                        
-                        <br>
-
-                        
-
+                       
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
                                 <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
                             </div>
                             <div class="col-xs-12 col-md-4">
-                                <a href="fin.compra.html" class="btn btn-success btn-block" id="procesar-compra">Finalizar compra</a>
-                            </div>
-
-                        
+                                <a href="fin.compra.html" class="btn btn-info btn-block" id="procesar-compra">Finalizar compra</a>
+                            </div> 
 
                         </div>
                     </form>
@@ -184,5 +193,8 @@
    
 </body>
 
-</html>
+<footer>
+    <!-- PATTRICIAAAA ACÁ ESTÁ TODO LISTO PARA USTED, NO OLVIDE EL CSS, ÉXITOS-->
+</footer>
+
 </html>
