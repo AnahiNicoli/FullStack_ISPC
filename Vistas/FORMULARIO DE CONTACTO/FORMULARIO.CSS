@@ -73,3 +73,15 @@ body {
 .container-form .btn-enviar:hover{
     background: rgb(0, 116, 158);
 }
+.container-form .btn-volver{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    outline: 0px;
+    background: rgb(0, 116, 158);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
