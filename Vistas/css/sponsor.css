@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*main styling*/
+body {
+    background-color: rgb(72, 88, 88);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body h1 {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-size: 10rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Clases de utilidad */
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.display-1 {
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.display-2 {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+
+
+/* Menu de navegación */
+
+#menu {
+    background: #fff;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+}
+
+#menu h2 {
+    float: left;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    float: right;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    color: black;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#menu a:hover {
+    color: #0f3e44;
+}
+
+#menu .navegador {
+    max-width: fit-content;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+#menu .navegador a {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#menu .navegador a:hover {
+    color: #0f3e44;
+}
+
+/* Header */
+
+#main-header {
+    background: url(../imagenes/viaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+#main-header .header-titulo {
+    padding-top: 300px;
+}
+
+#main-header .logo {
+    padding: 10px;
+    height: 80px;
+    width: auto;
+}
+
+#main-header p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Descripcion */
+
+#description {
+    height: 100vh;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    text-align: center;
+}
+
+.imagen1 img {
+    height: 500px;
+    width: auto;
+    padding-top: 50px;
+    transition: .7s ease-in-out all;
+    opacity: 0.5;
+}
+
+.imagen1 img.visible{
+    opacity: 1;
+}
+
+
+/* servicios */
+
+#servicios {
+    background: url(../imagenes/mainheader.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    text-align: center;
+}
+
+#servicios img {
+    height: 100px;
+}
+
+
+#servicios .description-row {
+    padding-top: 130px;
+
+}
+
+#servicios .description-box {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+
+/* About */
+
+#about {
+    height: 100vh;
+
+}
+
+#about .about-image img {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    height: 20px;
+    width: auto;
+}
+
+/* Footer */
+
+#mainfooter {
+    background-color: #0f3e44;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+#mainfooter .media img {
+    height: 25px;
+    padding: 0 10px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+
+    to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+}
+
+.showcase {
+    height: 300px;
+    background-color: rgb(171, 214, 16);
+}
+/* Añade margen bajo el texto */
+.showcase p {
+    margin-bottom: 30px;
+}
+
+  /* Añade una sombra bajo la imágen */
+.showcase img {
+    box-shadow: 7px 7px 7px rgba(100, 87, 87, 0.2);
+}
+
+  /* Añade algo de padding al contenido del formulario */
+.showcase-form {
+    padding-left: 7px;
+}
+.grid {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.grid-item-1, .grid-item-2 {
+position: relative;
+top: 50px;
+}
+.showcase input[type='email'] {
+    padding: 10px 70px 10px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    padding-left: 6px;
+}
+.btn {
+    border-radius: 6px;
+    padding: 12px 20px;
+    background: #9867C5;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.showcase-form {
+    margin: auto;
+}
+
+  /* Change typeface and its size */
+.little-info {
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+}
+/* Centra el conetenedor, aplica un ancho máximo*/
+.lower-container {
+    margin: 120px auto;
+    padding: 0;
+    max-width: 1400px;
+}
+
+  /* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+  /* Apunta a todos los parrafos con la clase CSS text */
+.text {
+    color: black;
+    font-size: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: 0, 20px;
+    text-align: justify;
+}
+/* Mostrar horizontalmente, poner un poco de espacio alrededor */
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+  /* Agregar algo de padding alrededor del contenedor. Alinear el texto al centro */
+.stats {
+    padding: 45px 50px;
+    text-align: center;
+}
+
+  /* Aplicar margen y ancho */
+.stat {
+    margin: 0 30px;
+    text-align: center;
+    width: 800px;
+}
+.stats .fa {
+    color: purple;
+}
+.testimonial {
+    color: black;
+    padding: 40px;
+}
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+    height: 100%;
+    clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+    text-align: center;
+}
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+  /* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+                7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+/* Add padding around the footer as well */
+
+footer {
+    background-color: purple;
+    padding: 20px 10px;
+}
+
+  /* Sets all link texts to white and puts margin to the left and right */
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+footer a:hover {
+    color: #9867C5;
+    border-bottom: 2px solid #9867C5;
+}
+/* Tablets y pantallas más pequeñas */
+
+@media(max-width: 768px) {
+    .grid,
+    .grid-3 {
+    grid-template-columns: 1fr;
+    }
+
+/* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+    height: auto;
+    text-align: center;
+}
+
+/* Esto restablece el ancho del contendor de la imagen y agrega margen a la izquierda 
+*/ 
+
+.image {
+    width: 600px;
+    margin-left: 80px;
+}
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+    flex-direction: column;
+}
+
+.stats {
+    text-align: center;
+}
+
+/* Asegura que cada sección en las estadísticas no exceda el ancho del elemento padre. */
+
+.stat {
+    width: 100%;
+    padding-right: 80px;
+}
+
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 270px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+/* Dispositivos móviles */
+@media(max-width: 500px) {
+    .navbar {
+    height: 100px;
+}
+/* Cambia la alineación. El logo del título se queda en la parte superior, los enlaces de navegación ahora se muestran debajo*/
+
+.navbar .flex {
+    flex-direction: column;
+}
+
+
+/* Cuando pasamos encima el ratón, retienen el texto blanco y cambia el borde a negro */
+
+.navbar a:hover {
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+
+/* Establecer el color púrpura para el fondo de los enlaces de navegación, redondear las esquinas de los bordes y darle algo de espaciado*/
+
+.navbar ul {
+    background: #9867C5;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+
+/* Alinear el texto al centro */
+
+.showcase {
+    height: auto;
+    text-align: center;
+}
+
+
+/* Reducir el tamaño de la fuente */
+
+.little-info {
+    font-size: 13px;
+}
+
+
+/* Reducir el ancho de la imágen */
+
+.image {
+    width: 350px;
+    margin-left: 70px;
+}
+
+.stat {
+    margin-bottom: 40px;
+}
+
+
+/* Mover el círculo una vez más */
+
+.circle {
+background-color: transparent;
+border:3px solid rgb(9, 247, 247);
+height:90px;
+position: relative;
+top: -30px;
+left: 150px;
+border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+width:90px;
+}
