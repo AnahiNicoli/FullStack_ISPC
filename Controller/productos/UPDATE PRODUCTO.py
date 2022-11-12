@@ -21,9 +21,9 @@ def UPDATEValor(self,T_PROD_FECH_INI, T_PROD_FECH_FIN, T_PROD_NOMBRE, T_PROD_DET
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
-                sentenciaSQL= "INSERT INTO PRODUCTOS VALUES(20/11/2022, 15/12/2022,'QATAR','10 NOCHES HOTEL ESCALONETA EN CAPITAL DE QATAR',TRUE, 1725.999, 20, 20/12/2022 15:00:00, 007)"
-                data= (T_PROD_FECH_INI, T_PROD_FECH_FIN, T_PROD_NOMBRE, T_PROD_DETALLE, T_PROD_ACTIVO, T_PROD_PRECIO, T_PROD_PORC_RESERVA, T_PROD_FECHA_HORA_RESERVA, T_PROD_ORDEN)
-
+                sentenciaSQL= UPDATE PRODUCTOS
+                              SET T_PRODUCTO_PRECIO=1750983
+                              WHERE 1
                 cursor.execute(sentenciaSQL,data)
                 self.conexion.commit()
                 self.conexion.c
