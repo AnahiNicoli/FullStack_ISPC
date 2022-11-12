@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="botones.css"> 
+       
+        
+</head>
+<body>
+    <header>
+    </header>
+    
+
+    <footer>
+        <a href="Legales.html"> Política de privacidad </a>
+        <br>
+        <a href="Legales.html"> Términos y condiciones </a>
+        <br>
+        <a href="Legales.html"> Preguntas frecuentes </a>
+        <br>
+        <a href="Legales.html"> Contacto </a>
+        <br><br>
+        
+
+        <div class="redes-container"> <!-- ACÁ FALTAN LOS LINKS REALES A LAS REDES, PUSE LOS SITIOS PRINCIPALES POR FUNCIONALIDAD-->
+            <ul>
+                <li> <a href="https://facebook.com/" class="facebook"> <i class="fab fa-facebook-f"></i></a></li>
+                <li> <a href="https://instagram.com/" class="instagram"> <i class="fab fa-instagram"></i></a></li>
+                <li> <a href="https://twitter.com/" class="twitter"> <i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    Copyright © 2022 Easy Travel - ISPC Grupo 58
+    </footer>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area58</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+  <body>
+  </head>
+  <header> 
+    <center><img src="./img/easy travel rectangular300px.png"  width=400px /> </center>
+  </header> 
+<div id="menu">
+          <ul>
+            <li><a href="login/login.html">LOGIN</a></li>
+            <li>EMPRESA
+          <ul>
+                    <li><a href="empresa/contactos.html">CONTACTO</a></li>
+                    <li><a href="empresa/diferentes.html">POR QUÉ ELEGIRNOS</a></li>
+                    <!--<li><a href="empresa/equipo.html">EQUIPO</a></li>-->
+                    <li><a href="empresa/mision.html">MISIÓN Y VISIÓN</a></li>
+                    <li><a href="empresa/politicas.html">POLÍTICAS</a></li>
+                    <li><a href="empresa/preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="empresa/quienes_somos.html">QUIENES SOMOS</a></li>
+                </ul>
+            </li>
+            <li><a href="servicios/asociados.html">SERVICIOS</a></li>
+            <li><a href="productos/catalogo.html">PRODUCTOS</a></li>
+        </ul>
+</div>
+      
+    
+    <!-- Section con imagenes tipo carrousel con vista a las ofertas del momento, pueden tener un botón de "+detalles, y agregar al carrito", el estilo está dado
+           con bootstrap -->
+    <section class="ofertas">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/playa44.png" class="d-block w-500" alt="oferta_experiencia_relax_playa">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Relax en playa Tropical</h5>
+                  <p>Disfrutá de una magnífica experiencia de relax en una playa tropical</p>
+                  <button> + Info</button>
+                  <button> Agregar al carrito </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/gastro00.png" class="d-block w-500" alt="oferta_experiencia_gourmet">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Experiencia Gourmet</h5>
+                  <p>Disfrutá de un recorrido por los mejores Restorants y Bares para ir solo o en companía.</p>
+                  <button> + Info</button>
+                  <button> Agregar al carrito </button>
+                </div>
+              </div>
+              <div id="carousel" class="carousel">
+
+                <div id='iten_1' class="hideLeft">
+                 <img src="./img/Italia.jpeg">
+               </div>
+         
+               <div id='item_2' class="prevLeftSecond">
+                 <img src="./img/Brasil.jpeg">
+               </div>
+         
+               <div id='item_3' class="prev">
+                 <img src="./img/trekking00.png">
+               </div>
+         
+               <div id='item_4' class="selected">
+                 <img src="./img/playa44.png">
+               </div>
+         
+               <div id='item_5' class="next">
+                 <img src="./img/gastro00.png">
+               </div>
+         
+               <div id='item_6' class="nextRightSecond">
+                 <img src="./img/quienes_somos/hombre1.png">
+               </div>
+         
+               <div id='item_7' class="hideRight">
+                 <img src="./img/quienes_somos/hombre2.png">
+               </div>
+         
+               <div id='item_8' class="hideRight">
+                 <img src="./img/quienes_somos/mujer1.png">
+               </div>
+         
+             </div>
+         
+             <!--<div class="buttons">
+               <button class="button-82-pushable" role="button" id="prev"><span class="button-82-shadow"></span><span class="button-82-edge"></span><span class="button-82-front text">Previous</span></button>
+         
+         
+               <button class="button-82-pushable" role="button" id="next"><span class="button-82-shadow"></span><span class="button-82-edge"></span><span class="button-82-front text">Next</span></button>
+             </div>
+              <div class="carousel-item">
+                <img src="./img/trekking00.png" class="d-block w-500" alt="oferta_experiencia_trekking">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Experiencia Conexión Natural - Treaking -</h5>
+                  <p>Contectate con los mejores paisajes naturales, recorriendo senderos naturales a través de ríos, montañas, bosques milenarios de la mano de los mejores guías.</p>
+                  <button> + Info</button>
+                  <button> Agregar al carrito </button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>-->
+    </section>
+
+    
+    
+    
+    <script type="text/javascript" src="js/scriptcarrucel.js"></script>
+    <footer>
+         <a href="Legales.html"> Política de privacidad </a>
+        <br>
+        <a href="Legales.html"> Términos y condiciones </a>
+        <br>
+        <a href="Legales.html"> Preguntas frecuentes </a>
+        <br>
+        <a href="Legales.html"> Contacto </a>
+        <br><br>
+        
+
+        <div class="redes-container"> <!-- ACÁ FALTAN LOS LINKS REALES A LAS REDES, PUSE LOS SITIOS PRINCIPALES POR FUNCIONALIDAD-->
+            <ul>
+                <li> <a href="https://facebook.com/" class="facebook"> <i class="fab fa-facebook-f"></i></a></li>
+                <li> <a href="https://instagram.com/" class="instagram"> <i class="fab fa-instagram"></i></a></li>
+                <li> <a href="https://twitter.com/" class="twitter"> <i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    Copyright © 2022 Easy Travel - ISPC Grupo 58
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Travel Easy | Bienvenido </title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div class="container">
+            <div class="navegador">
+                <a href="#">Travel EASY</a>
+            </div>
+            <ul>
+                <li><a href="#description">Descripcion</a></li>
+                <li><a href="#servicios">Nuestros servicios</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+    <header id="main-header">
+        <div class="container">
+            <div class="header-titulo">
+                <img class="logo" src="./imagenes/viaje.jpg" alt="viaje">
+                <h1 class="display-1">Travel Easy</h1>
+                <p>Viaja con nosotros.</p>
+                
+            </div>
+        </div>
+    </header>
+
+    <section id="description">
+        <div class="container">
+            <h2 class="display-2">Descripción</h2>
+            <p>Te recontramos con tus sueños.</p>
+            <div class="imagen1">
+                <img src="./imagenes/viaje.jpg" alt="viaje">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2 class="display-2">Nuestros servicios</h2>
+            <div class="feature-box">
+                <div class="description-row">
+                    <div class="description-box">
+                        <img src="./imagenes/viaje.jpg" alt="sex">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos
+                            beatae quidem! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="description-box">
+                    <img src="./imagenes/viaje.jpg" alt="sex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos beatae
+                        quidem! </p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="description-box">
+                    <img src="./imagenes/viaje.jpg" alt="sex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos beatae
+                        quidem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="./imagenes/viaje.jpg" alt="sex">
+            </div>
+            <div class="about-text">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil reiciendis debitis beatae,
+                    ducimus voluptates est id itaque consequatur dolorem consectetur deleniti eveniet et nulla.</p>
+            </div>
+        </div>
+    </section>
+    <div class="lower-container container">
+        <section class="stats">
+            <div class="flex">
+                <div class="stat">
+                <i class="fa fa-folder-open fa-2x" aria-hidden="true"></i>
+                <h3 class="title">Es solo una columna</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stat">
+                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                <h3 class="title">otra información</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stat">
+                <i class="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i>
+                <h3 class="title">Aca va otra cosa</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+        <aside>    
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial grid-3">
+                <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de tranporte</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, excepturi ratione! Consequatur, ea! Nesciunt ad ratione ullam, quo fugiat temporibus, adipisci velit consectetur delectus cupiditate natus soluta quasi, exercitationem aut.</p>
+                </div>
+                    <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de hopedaje</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolor necessitatibus nam minus veritatis iure labore libero illum ut dolore, cum, dicta quos vero quaerat dolorem eum excepturi tempore ab?</p>
+                    </div>
+                    <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de comidas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa autem placeat labore natus accusantium fuga officia, asperiores aliquid obcaecati, sequi incidunt error dolores, accusamus ducimus quae temporibus quas commodi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </aside>
+
+    <footer>
+            <div class="container grid-3">
+                <div class="copyright">
+                <h3>Travel Easy</h3>
+                <p>Copyright &copy; 2022</p>
+                </div>
+                <nav class="links">
+                <ul>
+                    <li><a href="" class="outline">INICIO</a></li>
+                    <li><a href="" class="outline">NOSOTROS</a></li>
+                    <li><a href="" class="outline">CATEGORIAS</a></li>
+                </ul>
+                </nav>
+                <div class="profiles">
+                <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+                <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+                <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+                <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+                </div>
+            </div>
+    </footer>
+
+
+
+</body>
+</html>
+    
+
+<!DOCTYPE html>
+    <h1 id="privacidad"> Política de privacidad </h1>
+            <br>
+            <p>Easy Travel respeta tu derecho de privacidad y se compromete a cumplir con las leyes de privacidad y protección de la información.
+        Este apartado explica nuestra política con respecto a la recolección, uso y revelado de la información personal. Esta política puede llegar a ser modificada conforme se actualicen y expandan nuestros productos y servicios brindados. Por este motivo, por favor referirse a este apartado periódicamente.
+        Al acceder o utilizar el sitio web de Easy Travel, usted está aceptando nuestras prácticas de uso de la información.
+            </p>
+            <br>
+        <h2>Recolección de la Información Personal </h2>
+            <br>
+            <p>Easy Travel recolecta información personal que es necesaria para brindar y personalizar nuestro servicio brindado y nuestros esfuerzos de marketing. Esta información incluye su ciudad y dirección de e-mail. Si usted envía una carta o e-mail con información personal, es probable que recolectemos esa información. También es posible que recolectemos información de sus preferencias, como clicks en los links de los mails o de nuestro sitio web. Cualquier información personal que usted nos provea y/o que nosotros obtuviéramos de su parte, se mantendrá de manera segura y confidencial.
+            Cuando se conecta a Easy Travel mediante un servicio de terceros, como Facebook o Twitter, Easy Travel recolecta su información de ese servicio como su nombre, dirección de correo electrónico, dirección y otra información disponible según lo permitido por ese servicio. La información que recolectamos de los servicios de terceros depende de las preferencias de privacidad que usted tenga con los servicios de terceros. Por ejemplo, al conectarse vía Facebook, usted está autorizando a Easy Travel a acceder a su información personal de su cuenta de Facebook de conformidad con los Términos de uso de Facebook con respecto a su uso del servicio a través de Facebook.
+            Cuando usted visita Easy Travel, ya sea como usuario registrado o un usuario no registrado, nuestros servidores registran automáticamente los datos que su navegador envía cada vez que visita un sitio web. Este registro de datos puede incluir información como el tipo de navegador o la página web que se visita antes de acceder a nuestro servicio, las páginas de nuestro servicio que usted visita, el tiempo empleado en esas páginas, y fechas, y otras estadísticas. Utilizamos esta información para monitorear y analizar el uso del servicio y la administración técnica del Servicio, para aumentar la funcionalidad de nuestro servicio y facilidad de uso, y para adaptar mejor nuestro servicio a las necesidades de nuestros visitantes.
+            </p>
+            <br>
+        <h2>Uso de la Información por otras Páginas de Internet </h2> <br>
+            <p>Easy Travel utiliza links a otras páginas externas cuyas políticas pueden llegar a diferir de las nuestras. Easy Travel no guarda responsabilidad por las políticas de privacidad o contenido de estos sitios, operados y gerenciados por otras empresas. El hecho de que existan links a otros sitios web no es una aprobación, autorización o representación de Easy Travel con ese tercero, ni tampoco es un aval de su privacidad.
+            </p>
+            <br>
+        <h2>Revelado de la Información Personal </h2>
+            <br>
+            <p>Easy Travel no venderá ni alquilará su información personal a una tercera parte sin su consentimiento explícito.
+            Easy Travel podría llegar a revelar información personal en respuesta a requerimientos legales o en situaciones que involucran un riesgo potencial a la seguridad física o la propiedad de las personas.
+            Easy Travel también podría llegar a revelar información personal con otras compañías, agentes o contratistas para desarrollar servicios en nombre de nuestra empresa. Esto incluye empresas de mailing. Estas compañías solo pueden hacer uso de la información personal con el propósito de proveer el servicio que Easy Travel les solicita.
+            En el caso que Easy Travel sea adquirida o se fusione con una tercera parte, la nueva entidad deberá respetar esta política de privacidad con respecto a la información personal. Si la información personal es utilizada en forma contraria a lo mencionado en este apartado, usted recibirá un aviso al respecto y la información personal solo será utilizada si se obtiene su consentimiento explícito.
+            </p>
+            <br>
+        <h2>Recolección y uso de la Información Técnica </h2>
+            <br>
+            <p>Es posible que se haga una recolección y almacenamiento de cierta información técnica sobre su visita al sitio web de Easy Travel, como por ejemplo, dirección IP desde la cual accede,tipo de navegador y sistema operativo que utiliza, fecha y hora de su visita, su actividad a través de la página (por ejemplo las páginas a las que accedió), y
+            la dirección de Internet desde la cual accedió a la página de Easy Travel.
+            La información técnica que se recolecta no se utilizará para identificar a visitantes de la página. La información técnica se usa únicamente para analizar tendencias, administrar y mejorar nuestro sitio web, medir el tráfico y los patrones de navegación dentro de la página y generar estadísticas acerca de las visitas a nuestro sitio web.
+            y protección de su información. Nos preocupamos por la seguridad de su información. Utilizamos medidas de seguridad comercialmente razonables para preservar la integridad y seguridad de la información recopilada y mantenida a través de Easy Travel. Sin embargo, no podemos asegurar o garantizar la seguridad de cualquier información que usted nos proporciona ni garantiza que la información no pueda ser accedida, alterada o destruida por personas no autorizadas.
+        </p>
+        <br>
+
+    <h1 id="condiciones">Términos y condiciones </h1>
+            <br>
+            <p>Este documento describe los términos y condiciones (los "Términos y Condiciones ") aplicables al acceso y uso de los servicios dentro del sitio (el "Sitio").
+            </p>
+            <br>
+        <h2> Autorización </h2> 
+            <br>
+            <p>Cuando el Usuario accede al Sitio o lo utiliza de alguna manera, está aceptando nuestro Términos y Condiciones. Easy Travel podrá adaptar estos Términos y Condiciones. Usted puede revisar en esta página los cambios realizados en nuestros Términos y Condiciones.
+            </p>
+            <br>    
+        <h2>Hipervínculos </h2> 
+            br>
+            <p> Nuestro sitio puede contener hipervínculos o conexiones a sitios de terceros, exclusivamente para su información y conveniencia, respecto a los cuales Easy Travel no se responsabiliza por sus políticas o su contenido. El ingreso y uso de estos sitios se hace exclusivamente por cuenta propia y a riesgo de los Usuarios. Easy Travel no es en ningún momento parte contractual de los servicios para el usuario final.
+                Easy Travel se reserva el derecho de agregar y/o eliminar cualquier link o conexión a un sitio de terceras entidades, en cualquier momento, sin aviso previo ni expresión de causa.
+                Easy Travel no representa, ni aprueba la precisión, legalidad, legitimación, validez y confianza de los productos y servicios, sugerencias, y recomendaciones de los sitios de terceros.
+                Los hipervínculos a sitios de terceros, referencias, marcas, productos y servicios de terceros o información no constituyen o implican nuestra representación, patrocinio o aprobación de los terceros, ni de la calidad de sus productos y/o servicios.
+            </p>
+            <br>
+        <h2> Publicaciones </h2>
+            <br>
+            <p> Easy Travel no tiene control sobre la información provista por sitios de terceros. Esta información puede contener errores ortográficos o errores técnicos.
+                Easy Travel no garantiza, ni se hace responsable, de la precisión de la información presentada incluyendo la moneda, la calidad, el cumplimiento de la propiedad intelectual o la legalidad de la misma.
+            </p>
+            <br>
+        <h2> Propiedad Intelectual </h2> 
+            <br>
+            <p> Easy Travel se reserva todos los derechos de Propiedad intelectual y demás derechos sobre el servicio así como sobre los contenidos publicados, informaciones, imágenes, videos y bancos de datos. Por ello, está expresamente prohibida cualquier modificación, reproducción, publicación, transmisión a terceros y/o demás uso o explotación de la propiedad protegida sin el consentimiento previo por escrito de Easy Travel.
+                Easy Travel respeta la propiedad intelectual de otros. Si usted sabe o sospecha que cualquier uso del Servicio consituye un incumplimiento de la propiedad intelectual, por favor notifique al departamento de soporte de Easy Travel vía e-mail a legales@Easy Travel.com.
+            </p>
+            <br>
+        <h2> Privacidad </h2> 
+            <br>
+            <p> Nos importa la privacidad y seguridad de nuestros usuarios. Al utilizar nuestro servicio, usted nos da consentimiento a recolectar y utilizar su información conforme a lo establecido en nuestra Política de Privacidad.
+            </p>
+            <br>
+        <h2> Usos no permitidos </h2> 
+            <br>
+            <p> No está permitida ninguna acción o uso de dispositivo, software, u otro medio tendiente a interferir tanto en las actividades y operatoria de Easy Travel como en las bases de datos de Easy Travel. Cualquier intromisión, tentativa o actividad violatoria o contraria a las leyes sobre derecho de propiedad intelectual y/o a las prohibiciones estipuladas en este contrato harán pasible a su responsable de las acciones legales pertinentes, y a las sanciones previstas por este acuerdo, así como lo hará responsable de indemnizar los daños ocasionados.
+                No está permitido decriptar o hacer ingeniería inversa del Sitio, o romper, alterar o interferir con el Servicio. Todo Usuario será legalmente responsable de las siguientes conductas: a) Uso incorrecto del sitio o de la información que contenga; b) Uso con fines o efectos ilícitos del sitio, sus servicios o de la información que contenga; c) Causar inutilización, demora, deterioro o daño al sitio, sus servicios o a la información que contenga; d) Reproducción total o parcial, comercialización, distribución, publicación o modificación no autorizada de información.
+            </p>
+            <br>
+        <h2> Exclusión de responsabilidad </h2> 
+            <br>
+            <p> Easy Travel no es responsable por daños y/o perjuicios directos o indirectos causados por cualquier adición o alteración efectuada a la página web y/o software realizado por los Usuarios o terceras partes y que no sean aprobados por Easy Travel.
+                Es obligación de los usuarios contar con antivirus adecuados, antispyware y en general con todos los mecanismos necesarios para proteger los datos e información computacional. Easy Travel no será responsable por la seguridad técnica, calidad y funcionamiento de los antivirus/antispyware y fiabilidad de las comunicaciones efectuadas a través de aparatos, redes, terminales o equipos.
+                Easy Travel procura que la información contenida en su sitio web sea completa, exacta y actualizada. Sin embargo, no está en condiciones de garantizar dicha integridad, exactitud o vigencia de toda la información ofrecida.
+                Por ello, no garantiza un servicio libre de errores e ininterrumpido y no será responsable bajo ninguna circunstancia por eventuales daños y/o perjuicios directos o indirectos que puedan derivarse de su uso, por errores o inexactitudes de la información contenida en él, ni respecto de interrupciones, demoras, virus o fallas del sistema.</p>
+            </p>
+            <br>
+
+    <h1 id="faq">Preguntas frecuentes </h1>
+        <br>
+        <h2>1.1.¿Cómo funciona Easy Travel? <br>
+            1.2.¿Cuánto cuesta el servicio?<br>
+            1.3.¿Tienen una comparativa de precio con otros servicios similares? <br>
+            1.4.¿Existen descuentos específicos para los usuarios de Easy Travel? <br>
+            1.5.¿Cuáles son las formas de pago disponibles? <br>
+            1.6.¿Por qué Easy Travel es seguro para realizar un pago?</h2> <!-- Me falta agregarle respuestas tipo menú desplegable-->
+            <br>
+    <h1 id="contacto"> <a href="AcáVaelFormDeCOntacto.html"> Contacto </a> </h1> <!--falta el link al form de contacto-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Travel Easy | Bienvenido</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div class="container">
+            <div class="navegador">
+                <a href="#">Travel EASY</a>
+            </div>
+            <ul>
+                <li><a href="#description">Descripcion</a></li>
+                <li><a href="#servicios">Nuestros servicios</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+    <header id="main-header">
+        <div class="container">
+            <div class="header-titulo">
+                <img class="logo" src="./imagenes/viaje.jpg" alt="viaje">
+                <h1 class="display-1">Travel Easy</h1>
+                <p>Viaja con nosotros.</p>
+                
+            </div>
+        </div>
+    </header>
+
+    <section id="description">
+        <div class="container">
+            <h2 class="display-2">Descripción</h2>
+            <p>Te recontramos con tus sueños.</p>
+            <div class="imagen1">
+                <img src="./imagenes/viaje.jpg" alt="viaje">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2 class="display-2">Nuestros servicios</h2>
+            <div class="feature-box">
+                <div class="description-row">
+                    <div class="description-box">
+                        <img src="./imagenes/viaje.jpg" alt="sex">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos
+                            beatae quidem! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="description-box">
+                    <img src="./imagenes/viaje.jpg" alt="sex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos beatae
+                        quidem! </p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="description-box">
+                    <img src="./imagenes/viaje.jpg" alt="sex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores animi, vero eos beatae
+                        quidem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="./imagenes/viaje.jpg" alt="sex">
+            </div>
+            <div class="about-text">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil reiciendis debitis beatae,
+                    ducimus voluptates est id itaque consequatur dolorem consectetur deleniti eveniet et nulla.</p>
+            </div>
+        </div>
+    </section>
+    <div class="lower-container container">
+        <section class="stats">
+            <div class="flex">
+                <div class="stat">
+                <i class="fa fa-folder-open fa-2x" aria-hidden="true"></i>
+                <h3 class="title">Es solo una columna</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stat">
+                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                <h3 class="title">otra información</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stat">
+                <i class="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i>
+                <h3 class="title">Aca va otra cosa</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+        <aside>    
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial grid-3">
+                <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de tranporte</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, excepturi ratione! Consequatur, ea! Nesciunt ad ratione ullam, quo fugiat temporibus, adipisci velit consectetur delectus cupiditate natus soluta quasi, exercitationem aut.</p>
+                </div>
+                    <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de hopedaje</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolor necessitatibus nam minus veritatis iure labore libero illum ut dolore, cum, dicta quos vero quaerat dolorem eum excepturi tempore ab?</p>
+                    </div>
+                    <div class="card">
+                    <div class="circle">
+                    <img src="./imagenes/image-avatar.png" alt="">
+                    </div>
+                    <h3>Empresa de comidas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa autem placeat labore natus accusantium fuga officia, asperiores aliquid obcaecati, sequi incidunt error dolores, accusamus ducimus quae temporibus quas commodi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </aside>
+
+    <footer>
+            <div class="container grid-3">
+                <div class="copyright">
+                <h3>Travel Easy</h3>
+                <p>Copyright &copy; 2022</p>
+                </div>
+                <nav class="links">
+                <ul>
+                    <li><a href="" class="outline">INICIO</a></li>
+                    <li><a href="" class="outline">NOSOTROS</a></li>
+                    <li><a href="" class="outline">CATEGORIAS</a></li>
+                </ul>
+                </nav>
+                <div class="profiles">
+                <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+                <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+                <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+                <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+                </div>
+            </div>
+    </footer>
+
+
+
+</body>
+</html>
