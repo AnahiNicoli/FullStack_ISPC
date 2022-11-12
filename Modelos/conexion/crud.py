@@ -85,8 +85,8 @@ class Crud:
         elif argument == "SERVICIOS": return "SELECT * FROM SERVICIOS WHERE T_COMB_ID1 = ? AND T_NIV_ID2 = ?"
         elif argument == "COMB_NIV": return "SELECT * FROM COMB_NIV WHERE T_COMB_ID2 = ? AND T_PROD_ID2 = ?"
         elif argument == "COMB_PROD": return "SELECT * FROM COMB_PROD WHERE T_C_S_ID = ?"
-        elif argument == "CAT_SUB": return "SELECT * FROM CAT_SUB WHERE T_PROD_ID1 = ? AND T_C_S_ID1 = ?"
-        elif argument == "CAT_SUB_PROD": return "SELECT * FROM CAT_SUB_PROD WHERE T_E_S_ID = ?"
+        elif argument == "CAT_SUB": return "SELECT * FROM CAT_SUB WHERE T_C_S_ID1 = ?"
+        elif argument == "CAT_SUB_PROD": return "SELECT * FROM CAT_SUB_PROD WHERE T_E_S_ID = ? AND T_PROD_ID1 = ?"
         elif argument == "EMP_SERV": return "SELECT * FROM EMP_SERV WHERE T_PROD_ID = ?"
         elif argument == "PUB_IMG": return "SELECT * FROM PUB_IMG WHERE T_PUB_ID2 = ? AND T_IMG_ID1 = ?"
         elif argument == "EMP_SERV_PROD": return "SELECT * FROM EMP_SERV_PROD WHERE T_PROD_ID4 = ? AND T_E_S_ID1 = ?"
@@ -116,12 +116,17 @@ class Crud:
         elif argument == "SERVICIOS": return "DELETE * FROM SERVICIOS WHERE T_COMB_ID1 = ? AND T_NIV_ID2 = ?"
         elif argument == "COMB_NIV": return "DELETE * FROM COMB_NIV WHERE T_COMB_ID2 = ? AND T_PROD_ID2 = ?"
         elif argument == "COMB_PROD": return "DELETE * FROM COMB_PROD WHERE T_C_S_ID = ?"
-        elif argument == "CAT_SUB": return "DELETE * FROM CAT_SUB WHERE T_PROD_ID1 = ? AND T_C_S_ID1 = ?"
-        elif argument == "CAT_SUB_PROD": return "DELETE * FROM CAT_SUB_PROD WHERE T_E_S_ID = ?"
+        elif argument == "CAT_SUB": return "DELETE * FROM CAT_SUB WHERE T_C_S_ID1 = ?"
+        elif argument == "CAT_SUB_PROD": return "DELETE * FROM CAT_SUB_PROD WHERE T_E_S_ID = ? AND T_PROD_ID1 = ?"
         elif argument == "EMP_SERV": return "DELETE * FROM EMP_SERV WHERE T_PROD_ID = ?"
         elif argument == "PUB_IMG": return "DELETE * FROM PUB_IMG WHERE T_PUB_ID2 = ? AND T_IMG_ID1 = ?"
         elif argument == "EMP_SERV_PROD": return "DELETE * FROM EMP_SERV_PROD WHERE T_PROD_ID4 = ? AND T_E_S_ID1 = ?"
         pass      
+
+    def especial_select_case(self, argument):
+        if argument == "CATEGORIAS": return "SELECT COUNT(SUB.T_SUB_ID), CAT.T_CAT_ID AS ID_CATEGORIA, CAT.T_CAT_NOMBRE, CAT_SUB.T_SUB_ID1 AS ID_SUBCATEGORIA, SUB.T_SUB_NOMBRE FROM CATEGORIAS AS CAT INNER JOIN CAT_SUB ON CAT.T_CAT_ID = CAT_SUB.T_CAT_ID1 AND CAT_SUB.T_C_S_ACTIVO = TRUE LEFT JOIN SUBCATEGORIAS SUB ON SUB.T_SUB_ID = CAT_SUB.T_SUB_ID1 AND SUB.T_SUB_ACTIVA = TRUE WHERE CAT.T_CAT_ACTIVA = TRUE AND CAT.T_CAT_ID = ?"
+        elif argument == "CATEGORIAS": return "SELECT COUNT(SUB.T_SUB_ID), CAT.T_CAT_ID AS ID_CATEGORIA, CAT.T_CAT_NOMBRE, CAT_SUB.T_SUB_ID1 AS ID_SUBCATEGORIA, SUB.T_SUB_NOMBRE FROM CATEGORIAS AS CAT INNER JOIN CAT_SUB ON CAT.T_CAT_ID = CAT_SUB.T_CAT_ID1 AND CAT_SUB.T_C_S_ACTIVO = TRUE LEFT JOIN SUBCATEGORIAS SUB ON SUB.T_SUB_ID = CAT_SUB.T_SUB_ID1 AND SUB.T_SUB_ACTIVA = TRUE WHERE CAT.T_CAT_ACTIVA = TRUE AND CAT.T_CAT_ID = ?"
+        pass
  
 #====================CONSULTAS====================
     def insert(self, parameter_list, tabla):
