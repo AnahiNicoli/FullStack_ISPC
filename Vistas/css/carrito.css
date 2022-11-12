@@ -1,68 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap');
-
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Menu de navegación */
-
-/* Header */
-
-/*main styling*/
 
 
-/* no tengo todos los tamaños pero los
-dejo planteados por si existen futuros cambios
-los tomo del css de P Solis*/ 
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 25px;
+header {background-color: #239398;
+        padding: 1em;
 }
 
 h4 {
-    font-size: 30px;
+    float: left;
 }
 
-h5 {
-    font-size: 30px;
+body { background-color: #dddbdb ;
+    
+    
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.7em;
-    margin: 10px 0;
+section, aside {background-color: #dddbdb;
+                padding: 2em ;
+}
+section {float: left;
+        width: 70%
 }
 
-a {
-    text-decoration: none;
-
+aside {
+    float: right;
+    width: 30%;
+    background-color: #dddbdb;
 }
 
-/* EL CONTAINER */
-
-.container {
-    margin: auto;
-    max-width: 1300px;
-    overflow: auto;
-    padding: 0 20px;
-    background-color: rgb(255, 255, 255)
+.comprita {
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
 }
 
+.carrito {
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+}
 
-/* Footer 
+.sumita {
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+}
 
-EL FOOTER DEBERÍA SER EN FONDO GRIS (VER CARTA DE COLOR DE LA MARCA) */
+h4 {
+    float: right;
+}
 
+section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+ 
