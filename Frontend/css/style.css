@@ -1,0 +1,22 @@
+/*Estilo de botón modal +Info*/
+button {
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+
+
+/* Estilo de botón Agregar al Carrito del Carrousel */
+.fcc-btn{
+   background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+/* Estilo de fondo modal -popup- de +info */
+#modal::backdrop {
+    background-color: rgba(0,0,0,.55);
+}
