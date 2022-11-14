@@ -1,1 +1,0 @@
-#Clase imagen -- se van a guardar imágenes en la base de datos (blob)
