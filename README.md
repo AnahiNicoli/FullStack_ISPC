@@ -8,6 +8,7 @@ GUIDONE, Damián<br>
 ILLBELE, Patricia<br>
 NÍCOLI, Anahí<br>
 SOLIS, Patricia<br>
+SOTO VALENZUELA, Juan Gabriel<br>
 DARÍO, Nicolas Gianna<br>
 PABLO, Novillo<br>
 
