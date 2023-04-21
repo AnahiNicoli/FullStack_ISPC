@@ -6,4 +6,4 @@
 4- Registro de combos, nombre de combo, productos incluídos (en la lógica se usará el nivel del producto para armado de combos lógicos)
 5- Incluir un registro de empresas asociadasa los servicios prestados y empresas que pagan publicidad en nuestro sitio.
 
-![DIAGRAMA ENTIDAD RELACIÓN](https://github.com/AnahiNicoli/FullStack_ISPC/blob/main/Backend/easy_Travel/DER.png)
+![DIAGRAMA ENTIDAD RELACIÓN](https://github.com/AnahiNicoli/FullStack_ISPC/blob/main/Documentaci%C3%B3n/DER.png)
