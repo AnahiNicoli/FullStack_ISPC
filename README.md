@@ -9,7 +9,7 @@ ILLBELE, Patricia<br>
 NÍCOLI, Anahí<br>
 SOLIS, Patricia<br>
 SOTO VALENZUELA, Juan Gabriel<br>
-DARÍO, Nicolas Gianna<br>
+DARÍO, Nicolas Giana<br>
 PABLO, Novillo<br>
 
 
