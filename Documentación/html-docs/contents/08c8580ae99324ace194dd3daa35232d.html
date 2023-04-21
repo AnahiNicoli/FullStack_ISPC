@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>24- Pagar con Tarjeta</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+<script type="text/javascript" src="../assets/js/imageMapResizer.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>24- Pagar con Tarjeta</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLUseCase"></span>
+          UMLUseCase
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>Travel Easy</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='a941551ef16e6a3eb543302cb6f0b3b9.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modelado Travel Easy</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='998635fc34cf64bf070d450ee00b54cc.html'><span class='node-icon staruml-icon icon-UMLUseCaseSubject'></span>Travel Easy</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='08c8580ae99324ace194dd3daa35232d.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>24- Pagar con Tarjeta</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <h1>ID: 24 | Nombre: Pagar con tarjeta</h1>
+
+<ul><li>Creado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Creación: <em>7/11/2022</em></li></ul></li><li>Actualizado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Actualización: <em>8/11/2022</em></li></ul></li><li><p>Actores: <em>Cliente, Entidad Bancaria.</em></p></li><li><p>Disparador: <em>Necesidad de concretar la compra mediante tarjeta.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se concreta la compra del cliente que se encuentra en interacción con el sistema mediante el pago con tarjeta.</em></p></li><li><p>Pre-condición: <em>El usuario selecciona abonar con tarjeta los ítems seleccionados en el carrito.</em></p></li><li><p>Post-condición: <em>Si el usuario ingresa los datos de la tarjeta procede tras la verificación de lo contrario se envía una alerta.</em></p></li></ul>
+
+<h3>Flujo Normal</h3>
+
+<ol><li>El sistema solicita ingresar los datos de la tarjeta.</li><li>El cliente ingresa los datos de la tarjeta.</li><li>El sistema verifica los datos de la tarjeta con la entidad bancaria.</li><li>El sistema encuentra válidos los datos de la tarjeta.</li><li>El sistema pide confirmación de compra.</li><li>El cliente confirma la compra.</li><li>El sistema envía la presentaciones a la entidad bancaria.</li><li>El sistema envía un mensaje de compra exitosa.</li><li>El sistema envía un mail y confirma la concresión de la compra.</li><li>El cliente puede ver un resumen de la compra realizada.</li></ol>
+
+<h3>Flujo Alternativo</h3>
+
+<h4>4. El sistema no encuentra válidos los datos de la tarjeta.</h4>
+
+<pre><code>1. El sistema pide verificar datos ingresados.
+2. El cliente procede a realizar cambios.
+3. Continuamos desde paso 3 del flujo normal.</code></pre>
+
+<h4>6. El cliente rechaza compra.</h4>
+
+<pre><code>1. Pasa al caso de uso 22- Seleccionar Forma de Pago.
+</code></pre>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+        
+        
+<section class="element-list">
+    <h3>Actors</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='8ae67c4af413e3d0a51e5a019d4208e5.html'><span class='node-icon staruml-icon icon-UMLActor'></span>Entidad Bancaria</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>24- Pagar con Tarjeta</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>extensionPoints</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='9949c6547df2992dd81a349817604b77.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(24- Pagar con Tarjeta→22- Seleccionar Forma de Pago)</a></li>
+        
+        <li><a href='640298086240a71a03010bdd923deb9b.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(24- Pagar con Tarjeta—Entidad Bancaria)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='9949c6547df2992dd81a349817604b77.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(24- Pagar con Tarjeta→22- Seleccionar Forma de Pago)</a></li>
+        
+        <li><a href='640298086240a71a03010bdd923deb9b.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(24- Pagar con Tarjeta—Entidad Bancaria)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
+      <script>
+      imageMapResize();
+      </script>
+    </div>
+  </body>
+</html>
