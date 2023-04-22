@@ -1,7 +1,7 @@
 # FullStack_ISPC<br>
 Instituto Superior Politécnico de Córdoba <br>
-Tecnicatura en Desarrollo Web y Aplicaciones Digitales- 1°Año <br>
-Repositorio grupal 2º cuatrimestre del grupo 58<br>
+Tecnicatura en Desarrollo Web y Aplicaciones Digitales- 2°Año <br>
+Continuación del Repositorio grupal 2º cuatrimestre (2022) del grupo 58<br>
 
 Integrantes: <br>
 GUIDONE, Damián<br>
