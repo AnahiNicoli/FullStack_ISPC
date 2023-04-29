@@ -62,29 +62,43 @@
         <h3>Description</h3>
         <div>
           
-            <h1>ID: 21 | Nombre: Comprar carrito </h1>
+            <p>ID: 21 | Nombre: Comprar carrito
+Creado por: Anahí Nícoli</p>
 
-<ul><li>Creado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Creación: <em>7/11/2022</em></li></ul></li><li>Actualizado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Actualización: <em>7/11/2022</em></li></ul></li><li><p>Actores: <em>Cliente.</em></p></li><li><p>Disparador: <em>Necesidad de concretar la compra.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se dá lugar a gestionar los productos cargados en el carrito.</em></p></li><li><p>Pre-condición: <em> El cliente desea verificar la totalidad de ítems seleccionados en el carrito.</em></p></li><li><p>Post-condición: <em>El cliente verifica la carga del carrito y la corrige de forma satifactoria para continuar con su compra.</em></p></li></ul>
+<p>Fecha de Creación: 7/11/2022
+Actualizado por: Anahí Nícoli</p>
+
+<p>Fecha de Actualización: 7/11/2022
+Actores: Google, Administrador, Cliente y Usuarios externos.</p>
+
+<p>Disparador: Necesidad de concretar la compra.</p>
+
+<p>Descripción: Caso de Uso en donde se concreta la compra del usuario que se encuentra en interacción con el sistema.</p>
+
+<p>Pre-condición: <em> El usuario desea elegir el medio de pago de los ítems seleccionados en el carrito.</em></p>
+
+<p>Post-condición: Si el usuario ya posee cuenta, procede tras la verificación; de lo contrario se ofrece crear una cuenta con opción a utilizar su cuenta de Google.</p>
 
 <h3>Flujo Normal</h3>
 
-<ol><li>El sistema verifica que el usuario sea cliente.</li><li>El sistema autocompleta los datos personales.</li><li>El cliente confirma los datos personales y el carrito cargado.</li><li>El sistema ofrece seleccionar forma de pago. </li><li>Pasamos al caso de uso 22- Seleccionar Forma de Pago.</li></ol>
+<p>El sistema verifica tipo de usuario (Cliente, Administrador).
+EL sistema verifica los datos personales.
+El sistema autocompleta los datos personales.
+El usuario opta por elegir una forma de pago.</p>
 
 <h3>Flujo Alternativo</h3>
 
 <h4>1. El usuario no se encuentra logueado.</h4>
 
-<pre><code>1. El carrito que en suspención.
-2. Pasamos al caso de uso 14- Verificar Identidad.</code></pre>
+<ol><li>El sistema devuelve un formulario en donde requiere datos a completar por el usuario, para terminar de crear la cuenta.</li><li>El usuario completa datos requeridos por el sistema y confirma la carga.</li><li>El sistema envía un mail de confirmación a la casilla del usuario para verificar cuenta.</li><li>El usuario accede al mail y confirma creación de cuenta mediante ingreso a link proporcionado.</li><li>Prosigue en punto 1 del flujo normal.</li></ol>
 
-<h4>2. El cliante reconoce datos desactualizados.</h4>
+<h4>3. El usuario no ingresa datos personales obligatorios.</h4>
 
-<pre><code>1. El cliente procede a ralizar los cambios pertinentes afectando a su perfil.
-2. Prosigue punto 3 del flujo normal.</code></pre>
+<ol><li>El sistema envía un mensaje recordando ingresar los datos obligatorios.</li><li>Prosigue punto 4 del flujo normal.</li></ol>
 
-<h4>3. El cliente decide dejar en suspensión al carrito.</h4>
+<h4>4. El usuario sale de la sesión sin seleccionar modo de pago.</h4>
 
-<pre><code>1. El sistema hace resguardo de lo realizado.</code></pre>
+<ol><li>El sistema envía un mensaje de correo electrónico.</li></ol>
           
         </div>
       </section>

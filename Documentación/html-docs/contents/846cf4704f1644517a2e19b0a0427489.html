@@ -62,7 +62,39 @@
         <h3>Description</h3>
         <div>
           
-            <span class="label label-info">none</span>
+            <p>Creado por: Patricia Illbele
+Fecha de Creación: 12/11/2022
+Actualizado por:
+Fecha de Actualización:
+Actores: Google, Administrador, Cliente y Usuarios externos.
+Disparador: Necesidad de consultar manual de usuario administrador.
+Descripción: Caso de Uso en donde se consulta el manual de usuario para el perfil administrador
+Pre-condición: <em> El usuario debe contar con perfil cliente.</em>
+Post-condición: Ninguna.</p>
+
+<h3>Flujo Normal</h3>
+
+<p>El usuario se loguea ingresando nombre y contraseña
+El sistema verifica tipo de usuario (Cliente, Administrador).
+El usuario accede al manual.</p>
+
+<h3>Flujo Alternativo</h3>
+
+<p>1.El usuario no tiene cuenta.
+El sistema devuelve un formulario en donde requiere datos a completar por el usuario, para crear la cuenta.
+El usuario completa datos requeridos por el sistema y confirma la carga.
+El sistema envía un mail de confirmación a la casilla del usuario para verificar la cuenta.
+El usuario accede al mail y confirma la creación de cuenta mediante ingreso a link proporcionado.
+Prosigue en punto 1 del flujo normal
+2. El usuario no ingresa datos personales obligatorios correctos.
+El sistema envía un mensaje recordando ingresar los datos obligatorios.
+Prosigue punto 4 del flujo normal.</p>
+
+<ol><li><p>El usuario no es administrador.
+El sistema no permite acceso al manual de administrador.</p></li><li><p>El usuario no recuerda contraseña
+El usuario completa formulario para recordar contraseña.
+El sistema envía mail a la casilla registrada para reestablecer contraseña.
+Prosigue en punto 1 del flujo normal.</p></li></ol>
           
         </div>
       </section>

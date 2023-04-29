@@ -62,26 +62,46 @@
         <h3>Description</h3>
         <div>
           
-            <h1>ID: 24 | Nombre: Pagar con tarjeta</h1>
+            <p>ID: 24 | Nombre: Pagar con tarjeta
+Creado por: Anahí Nícoli</p>
 
-<ul><li>Creado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Creación: <em>7/11/2022</em></li></ul></li><li>Actualizado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Actualización: <em>8/11/2022</em></li></ul></li><li><p>Actores: <em>Cliente, Entidad Bancaria.</em></p></li><li><p>Disparador: <em>Necesidad de concretar la compra mediante tarjeta.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se concreta la compra del cliente que se encuentra en interacción con el sistema mediante el pago con tarjeta.</em></p></li><li><p>Pre-condición: <em>El usuario selecciona abonar con tarjeta los ítems seleccionados en el carrito.</em></p></li><li><p>Post-condición: <em>Si el usuario ingresa los datos de la tarjeta procede tras la verificación de lo contrario se envía una alerta.</em></p></li></ul>
+<p>Fecha de Creación: 7/11/2022
+Actualizado por: Anahí Nícoli</p>
+
+<p>Fecha de Actualización: 8/11/2022
+Actores: Google, Administrador, Cliente y Usuarios externos.</p>
+
+<p>Disparador: Necesidad de concretar la compra mediante tarjeta.</p>
+
+<p>Descripción: Caso de Uso en donde se concreta la compra del usuario que se encuentra en interacción con el sistema mediante el pago con tarjeta.</p>
+
+<p>Pre-condición: <em> El usuario selecciona abonar con tarjeta los ítems seleccionados en el carrito.</em></p>
+
+<p>Post-condición: Si el usuario ingresa los datos de la tarjeta procede tras la verificación de lo contrario se envía una alerta.</p>
 
 <h3>Flujo Normal</h3>
 
-<ol><li>El sistema solicita ingresar los datos de la tarjeta.</li><li>El cliente ingresa los datos de la tarjeta.</li><li>El sistema verifica los datos de la tarjeta con la entidad bancaria.</li><li>El sistema encuentra válidos los datos de la tarjeta.</li><li>El sistema pide confirmación de compra.</li><li>El cliente confirma la compra.</li><li>El sistema envía la presentaciones a la entidad bancaria.</li><li>El sistema envía un mensaje de compra exitosa.</li><li>El sistema envía un mail y confirma la concresión de la compra.</li><li>El cliente puede ver un resumen de la compra realizada.</li></ol>
+<p>El sistema verifica tipo de usuario (Cliente, Administrador).
+EL sistema solicita ingresar los datos de la tarjeta.
+El usuario ingresa los datos de la tarjeta.
+El sistema verifica los datos de la tarjeta.
+El sistema envía un mensaje de compra exitosa.
+El sistema envía un mail y confirma la concresión de la compra.
+El usuario puede ver los detalles de la compra en el carrito.</p>
 
 <h3>Flujo Alternativo</h3>
 
-<h4>4. El sistema no encuentra válidos los datos de la tarjeta.</h4>
+<h4>1. El usuario ingresa mal los números de la tarjeta.</h4>
 
-<pre><code>1. El sistema pide verificar datos ingresados.
-2. El cliente procede a realizar cambios.
-3. Continuamos desde paso 3 del flujo normal.</code></pre>
+<ol><li>El sistema devuelve un alerta que pide revisar y editar datos para terminar de concretar el pago.</li><li>Prosigue en punto 3 del flujo normal.</li></ol>
 
-<h4>6. El cliente rechaza compra.</h4>
+<h4>3. El usuario no ingresa los números de la tarjeta.</h4>
 
-<pre><code>1. Pasa al caso de uso 22- Seleccionar Forma de Pago.
-</code></pre>
+<ol><li>El sistema envía un mensaje recordando ingresar los datos obligatorios.</li><li>Prosigue punto 3 del flujo normal.</li></ol>
+
+<h4>4. El usuario sale de la sesión sin confirmar la compra.</h4>
+
+<ol><li>El sistema envía un mensaje de correo electrónico.</li></ol>
           
         </div>
       </section>

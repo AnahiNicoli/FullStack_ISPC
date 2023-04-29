@@ -63,19 +63,59 @@
         <div>
           
             <p>ID: 20 | Nombre: Cargar carrito
-=====================================  </p>
+Creado por: Anahí Nícoli</p>
 
-<ul><li>Creado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Creación: <em>7/11/2022</em></li></ul></li><li>Actualizado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Actualización: <em>7/11/2022</em></li></ul></li><li><p>Actores: <em>Cliente.</em></p></li><li><p>Disparador: <em>Necesidad de recolectar los ítems seleccionados para la compra.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde el usuario especifica los productos, combos y ofertas ofrecidos por la empres en un carrito virtual.</em></p></li><li><p>Pre-condición: <em>El usuario desea acumular ítems con el propósito de compra futura o consultar el valor resultante al cargar múltiples productos.</em></p></li><li><p>Post-condición: <em>El usuario corrobora de forma efectiva la carga del carrito.</em></p></li></ul>
+<p>Fecha de Creación: 7/11/2022
+Actualizado por: Anahí Nícoli</p>
 
-<h3>Flujo Normal</h3>
+<p>Fecha de Actualización: 7/11/2022
+Actores: Google, Administrador, Cliente y Usuarios externos.</p>
 
-<ol><li>El usuario selecciona un producto, combo u oferta para cargar el carrito.</li><li>El sistema dá opciones referentes al producto, combo u oferta seleccionada.</li><li>El usuario selecciona, cantidad y detalles del producto, como ser fechas.</li><li>EL sistema pide confirmación de carga.</li><li>El usuario confirma la carga.</li><li>El sistema carga y resguarda el carrito.</li><li>El usuario decide proceder a gestionar los productos cargados.</li><li>Pasamos al caso de uso 21- Comprar Carrito</li></ol>
+<p>Disparador: Necesidad de recolectar los ítems seleccionados para la compra.</p>
+
+<p>Descripción: Caso de Uso en donde se especifica recopilación de productos y ofertas del usuario que se encuentra en interacción con el sistema.</p>
+
+<p>Pre-condición: El usuario desea acumular ítems con el propósito de compra futura.</p>
+
+<p>Post-condición: El usuario debe posicionarse en un producto, combo u oferta y hacer la selección.</p>
+
+<h3>Flujo Normal-el usuario carga el carrito desde la navegación de la página</h3>
+
+<p>El sistema verifica tipo de usuario (Anónimo, registrado).
+El sistema permite añadir ítems al carrito disponibles para compra durante la navegación.
+El usuario elige agregar ese ítem al carrito mediante un click.
+El sistema recolecta el listado de ítems seleccionados con características y sumatoria de valores.
+El sistema permite ver el listado de ítems seleccionados con detalles y valores.
+EL sistema ofrece hacer efectivo el pedido con el contenido del carrito.
+esto no sería otro caso de uso VER CARRITO?*</p>
 
 <h3>Flujo Alternativo</h3>
 
-<h4>5. El usuario rechaza la carga.</h4>
+<h4>1. El usuario opta por ver el carrito.</h4>
 
-<pre><code>1. El carrito no se vé modificado y el usuario prosigue con sus tareas.</code></pre>
+<ol><li>El usuario ingresa a ver el carrito.</li><li>El sistema permite ver el listado de ítems seleccionados con detalles y valores.</li><li>Continúa en el paso 6 del flujo normal.</li></ol>
+
+<h3>Flujo Alternativo</h3>
+
+<h4>2. El usuario opta por cargar el carrito desde el mismo carrito.</h4>
+
+<ol><li>El usuario opta por adherir más productos al carrito navegando nuevamente.</li><li>EL sistema ofrece a posibilidad de navegar nuevamente y agregar ítems nuevos.</li><li>el usuario opta por añadir más ítems de los mismos ya ingresados.</li><li>El sistema permite añadir más ítems sin navegar nuevamente la página.</li><li>Continúa en el paso 5 del flujo normal</li></ol>
+
+<h3>Flujo Alternativo</h3>
+
+<h4>3. El usuario quiere eliminar productos del carrito.</h4>
+
+<ol><li>El sistema ofrece eliminar cada producto.</li><li>El usuario opta por eliminar un producto.</li><li>El sistema envía una alerta para confirmar la operación.</li><li>El usuario confirma la eliminación.</li><li>El sistema suprime el ítem del listado.</li><li>Continúa en el paso 5 del flujo normal.</li></ol>
+
+<h3>Flujo Alternativo</h3>
+
+<h4>4. El usuario quiere vacar el carrito.</h4>
+
+<ol><li>El sistema ofrece vaciar el carrito.</li><li>El usuario opta por vaciar el carrito haciendo click.</li><li>El sistema envía una alerta para confirmar la operación.</li><li>El usuario confirma la eliminación.</li><li>El sistema vacía el carrito.</li><li>Continúa en el paso 2 del flujo normal.</li></ol>
+
+<h4>4. El usuario sale de la sesión sin hacer efectivo el pedido.</h4>
+
+<ol><li>El sistema envía un mensaje de correo electrónico.</li></ol>
           
         </div>
       </section>
