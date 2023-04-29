@@ -62,23 +62,40 @@
         <h3>Description</h3>
         <div>
           
-            <h1>ID: 22 | Nombre: Seleccionar formas de pago</h1>
+            <p>ID: 22 | Nombre: Seleccionar formas de pago
+Creado por: Anahí Nícoli</p>
 
-<ul><li>Creado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Creación: <em>8/11/2022</em></li></ul></li><li>Actualizado por: <em>Anahí Nícoli</em> <ul><li>Fecha de Actualización: <em>8/11/2022</em></li></ul></li><li><p>Actores: <em>Cliente.</em></p></li><li><p>Disparador: <em>Necesidad de seleccionar forma de pago para concretar la compra.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se selecciona el método de pago para concretar la compra del usuario que se encuentra en interacción con el sistema.</em></p></li><li><p>Pre-condición: <em>El usuario opta por elegir una forma de pago de los ítems seleccionados en el carrito.</em></p></li><li><p>Post-condición: <em>Procede tras el ingreso de los datos requeridos, de lo contrario se ofrece una alerta con opción de completar datos.</em></p></li></ul>
+<p>Fecha de Creación: 8/11/2022
+Actualizado por: Anahí Nícoli</p>
+
+<p>Fecha de Actualización: 8/11/2022
+Actores: Google, Administrador, Cliente y Usuarios externos.</p>
+
+<p>Disparador: Necesidad de seleccionar forma de pago para concretar la compra.</p>
+
+<p>Descripción: Caso de Uso en donde se selecciona el método de pago para concretar la compra del usuario que se encuentra en interacción con el sistema.</p>
+
+<p>Pre-condición: <em> El usuario opta por elegir una forma de pago de los ítems seleccionados en el carrito.</em></p>
+
+<p>Post-condición: Procede tras el ingreso de los datos requeridos, de lo contrario se ofrece una alerta con opción de completar datos.</p>
 
 <h3>Flujo Normal</h3>
 
-<ol><li>El sistema ofrece elegir entre pagar con débito o con tarjeta. </li><li>El cliente selecciona pagar con tarjeta.</li><li>Pasamos al caso de uso 24- Pagar con tarjeta</li></ol>
+<p>El sistema ofrece elegir entre pagar con débito y/o con tarjeta.
+El usuario selecciona un método de pago.
+EL sistema devuelve un formulario para completar datos de la tarjeta.</p>
 
 <h3>Flujo Alternativo</h3>
 
-<h4>2. El cliente selecciona pagar con efectivo.</h4>
+<h4>1. El usuario sale de la sesión sin seleccionar modo de pago.</h4>
 
-<pre><code>1. Pasamos al caso de uso 23- Pagar en efectivo.</code></pre>
+<ol><li>El sistema envía un mensaje de correo electrónico.</li></ol>
 
-<h4>2. El cliente decide cancelar el pago del carrito.</h4>
+<h3>Flujo Alternativo</h3>
 
-<pre><code>1. Pasamos al caso de uso 21- Comprar Carrito.</code></pre>
+<h4>1. El usuario selecciona el modo de pago equivocado.</h4>
+
+<ol><li>El sistema permite cambiar el modo de pago.</li></ol>
           
         </div>
       </section>

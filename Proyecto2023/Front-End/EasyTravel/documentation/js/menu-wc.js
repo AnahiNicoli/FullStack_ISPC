@@ -59,15 +59,33 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-b0bb343999c0401a2e3ecbec65490c5a76866396b25cae82ed79702c1d4e115033ea8c8ade9395518e8eba42217f2ec5d6c7a62f3d969b3ab2838fe206d56a66"' : 'data-target="#xs-components-links-module-AppModule-b0bb343999c0401a2e3ecbec65490c5a76866396b25cae82ed79702c1d4e115033ea8c8ade9395518e8eba42217f2ec5d6c7a62f3d969b3ab2838fe206d56a66"' }>
+                                            'data-target="#components-links-module-AppModule-611a04ff90ba57e0e48a739ec3a9f2e562b4b278758775c3727a2f28928f811a142cdf1aa0fbcdbe77040a5678be7bae7fb892e5001b0ab87268603631ff24ff"' : 'data-target="#xs-components-links-module-AppModule-611a04ff90ba57e0e48a739ec3a9f2e562b4b278758775c3727a2f28928f811a142cdf1aa0fbcdbe77040a5678be7bae7fb892e5001b0ab87268603631ff24ff"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-b0bb343999c0401a2e3ecbec65490c5a76866396b25cae82ed79702c1d4e115033ea8c8ade9395518e8eba42217f2ec5d6c7a62f3d969b3ab2838fe206d56a66"' :
-                                            'id="xs-components-links-module-AppModule-b0bb343999c0401a2e3ecbec65490c5a76866396b25cae82ed79702c1d4e115033ea8c8ade9395518e8eba42217f2ec5d6c7a62f3d969b3ab2838fe206d56a66"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-611a04ff90ba57e0e48a739ec3a9f2e562b4b278758775c3727a2f28928f811a142cdf1aa0fbcdbe77040a5678be7bae7fb892e5001b0ab87268603631ff24ff"' :
+                                            'id="xs-components-links-module-AppModule-611a04ff90ba57e0e48a739ec3a9f2e562b4b278758775c3727a2f28928f811a142cdf1aa0fbcdbe77040a5678be7bae7fb892e5001b0ab87268603631ff24ff"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >AppComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/CabeceraComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CabeceraComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/CuerpoComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CuerpoComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/DestacadosComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >DestacadosComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/FiltroComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >FiltroComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/MenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >MenuComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/PieComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >PieComponent</a>
                                             </li>
                                         </ul>
                                     </li>
