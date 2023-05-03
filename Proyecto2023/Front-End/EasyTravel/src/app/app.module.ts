@@ -9,6 +9,8 @@ import { FiltroComponent } from './filtro/filtro.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { PieComponent } from './pie/pie.component';
 import { DestacadosComponent } from './destacados/destacados.component';
+import { LogoETComponent } from './logo/logo-et/logo-et.component';
+import { CarruselComponent } from './carrusel/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DestacadosComponent } from './destacados/destacados.component';
     FiltroComponent,
     CuerpoComponent,
     PieComponent,
-    DestacadosComponent
+    DestacadosComponent,
+    LogoETComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
