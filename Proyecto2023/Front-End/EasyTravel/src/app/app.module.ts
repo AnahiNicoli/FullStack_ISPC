@@ -11,6 +11,9 @@ import { PieComponent } from './pie/pie.component';
 import { DestacadosComponent } from './destacados/destacados.component';
 import { LogoETComponent } from './logo/logo-et/logo-et.component';
 import { CarruselComponent } from './carrusel/carrusel/carrusel.component';
+import { ProductosComponent } from './productos/productos/productos.component';
+import { EmpresasComponent } from './empresas/empresas/empresas.component';
+import { ContactanosComponent } from './contactanos/contactanos/contactanos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CarruselComponent } from './carrusel/carrusel/carrusel.component';
     PieComponent,
     DestacadosComponent,
     LogoETComponent,
-    CarruselComponent
+    CarruselComponent,
+    ProductosComponent,
+    EmpresasComponent,
+    ContactanosComponent
   ],
   imports: [
     BrowserModule,
