@@ -1,0 +1,33 @@
+.contacto{
+    padding: 35px;
+    background-color: darkgrey;
+}
+#nombre{
+    margin-left: 20px;
+    width: 25%;
+    
+}
+#apellido{
+    margin-left: 130px;
+    width: 25%;
+}
+#mail{
+    margin-left: 130px;
+    width: 20%;
+}
+#telefono{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25%;
+}
+
+#text-area{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+h5{
+    text-align: center;
+}
+#enviar{
+    margin-left: 20px;
+}
