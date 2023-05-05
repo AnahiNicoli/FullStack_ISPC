@@ -14,6 +14,7 @@ import { CarruselComponent } from './carrusel/carrusel/carrusel.component';
 import { ProductosComponent } from './productos/productos/productos.component';
 import { EmpresasComponent } from './empresas/empresas/empresas.component';
 import { ContactanosComponent } from './contactanos/contactanos/contactanos.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactanosComponent } from './contactanos/contactanos/contactanos.comp
     CarruselComponent,
     ProductosComponent,
     EmpresasComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
