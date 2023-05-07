@@ -3,15 +3,28 @@
 
 <aside> 
     <div class="comprita"> 
-        <caption> <b>Resumen de tu compra </b></caption> 
-            <hr width=75%  size=3 color="#999999">
-            <p>Seleccioná un método de pago</p> 
-            <p>Ingresalo acá</p> 
-             <input type="text" name="codigo" id="codigodesc" placeholder="Ingrese el código" size="20" maxlength="20" />
-            <br><br><p>Subtotal:</p> 
-            <hr width=75%   size=3 color="#666666">
-            <p>Pagar</p> 
-            
+        <p><b> Seleccioná un método de pago </b></p> 
+        <hr width=75%  size=3 color="#999999">
+        <p><a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Transferencia </a> </p>
+      <div class="collapse" id="collapseExample" >
+        <div class="card card-body">
+         Transferí el monto al alias: MI.VIAJE.FELIZ luego envianos el comprobante por mail junto con tu nombre, apellido y DNI.
+        </div>
+      </div>
+
+        <p> <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="ctr">
+            Pagar con tarjeta </a> </p>
+      <div class="collapse" id="collapseExample" >
+          <div class="card card-body">
+              <p>Ingresá los datos de la tarjeta</p> 
+                 <input type="int" name="cardnumber" id="cardnumber" placeholder="xxxx xxxx xxxx xxxx" size="19" maxlength="19" />
+                  <p>CVV</p> <input type="int" name="cvv" id="cvv" placeholder="xxx" size="3" maxlength="3" />
+                  <br><br><p>Usted abonará:</p> 
+                   <hr width=75%   size=3 color="#666666">
+          </div>
+
+
             <div class="d-grid gap-2 col-6 mx-auto">
             <button onclick="mensaje3()" class="btn btn-dark" type="button" >Pagar</button>
             </div>
