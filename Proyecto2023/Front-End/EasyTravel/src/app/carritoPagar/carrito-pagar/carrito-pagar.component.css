@@ -1,0 +1,47 @@
+
+
+h4 {
+float: left;
+}
+
+body { background-color: #dddbdb ;
+
+
+}
+
+section, aside {background-color: #dddbdb;
+            padding: 2em ;
+}
+section {float: left;
+    width: 70%
+}
+
+aside {
+float: right;
+width: 30%;
+background-color: #dddbdb;
+}
+
+.comprita {
+background-color: white;
+padding: 2em;
+border-radius: 20px;
+}
+
+.carrito {
+background-color: white;
+padding: 1em;
+border-radius: 20px;
+}
+
+.sumita {
+background-color: white;
+padding: 2em;
+border-radius: 20px;
+}
+
+h4 {
+float: right;
+}
+
+
