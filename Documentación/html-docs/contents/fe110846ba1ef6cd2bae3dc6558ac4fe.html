@@ -62,43 +62,19 @@
         <h3>Description</h3>
         <div>
           
-            <p>Creado por: Solis Patricia
-Fecha de Creación: 07/11/2022</p>
+            <h1>ID: 7 | Nombre: Modificar Combos </h1>
 
-<p>Actualizado por: Solis Patricia
-    Fecha de Actualización: 14/11/2022</p>
-
-<p>Actores: Administrador</p>
-
-<p>Disparador: Selección de opción &quot;Modificar Combo&quot;</p>
-
-<p>Descripción: El administrador ingresa a ésta sección para Modificar Combo de la base de datos.</p>
-
-<p>Pre-condición: <em>El administrador debe ingresar a gestionar combo y seleccionar la opción -Modificar combo </em></p>
-
-<p>Post-condición: Al MODIFICAR un combo, se deberá especificar Tipo de productos que pertenecen al combo y cantidad para determinar su stock</p>
+<ul><li>Creado por: <em>Patricia Solis</em> <ul><li>Fecha de Creación: <em>7/11/2022</em></li></ul></li><li>Actualizado por: <em>Damián Guidone</em> <ul><li>Fecha de Actualización: <em>11/05/2023</em></li></ul></li><li><p>Actores: <em>Administrador</em></p></li><li><p>Disparador: <em>Necesidad del Administrador realizar modificaciones sobre los Combos.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se accede a modificar un Combo existente.</em></p></li><li><p>Pre-condición: <em>El administrador debe loguearse para acceder.</em></p></li><li><p>Post-condición: </p></li><li>Si la modificación del Combo es exitosa, se actualiza en la base de datos y en la lista de Combos existentes en la sección de gestión de Combos.</li><li>Si la modificación del Combo falla, se muestra un mensaje de error que indica el problema y se le da al administrador la oportunidad de corregir los errores y volver a intentar guardar el Combo.</li></ul>
 
 <h3>Flujo Normal</h3>
 
-<p>El administrador seleciona  &quot;MODIFICAR Combo&quot;.
-El sistema consulta con la base de datos.
-El sistema muestra en pantalla los distintos tipos de combos y productos incluidos en el que puede MODIFICAR : Vuelos, excursiones, hospedaje, Otros...
-El administrador selecciona el producto deseado para generar la modificacion del combo
-El sistema consulta con la base de datos.
-El sistema muestra en pantalla los resultados de los distintos productos encontrados  con opción de agregar al combo o eliminar del combo, y MODIFICA a cada campo de los resultados.
-El administrador realiza los cambios deseados y selecciona ACEPTAR.
-El sistema muestra en pantalla un mensaje : &quot;usted ha MODIFICADO XCombo-, está seguro?&quot; con la opciones de &quot;CANCELAR&quot; o &quot;APLICAR&quot;.
-El administrador CANCELA.
-El sistema vuelve a mostrar los resultados obtenidos sin modificar, esperando la acción del administrador.
-El administrador realiza los cambios deseados y selecciona ACEPTAR y APLICA
-El sistema guarda los cambios realizados en la base de datos.
-El sistema pregunta: &quot;SEGUIR MODIFICANDO&quot; O &quot;VOLVER A MENÚ GESTIONAR COMBO&quot;.</p>
+<ol><li>El administrador selecciona la opción de modificar un Combo existente.</li><li>El sistema busca los datos del Combo seleccionado.</li><li>El sistema muestra un formulario para modificar el Combo.</li><li>El administrador realiza las modificaciones pertinentes en el Combo.</li><li>El administrador resgualda los cambios realizados en el Combo.</li><li>El sistema valida que los campos obligatorios estén completos.</li><li>El sistema actualiza el Combo en la base de datos.</li><li>El sistema muestra un mensaje de confirmación de que el Combo se ha actualizado correctamente.</li></ol>
 
 <h3>Flujo Alternativo</h3>
 
-<h4>2. El administrador selecciona la opción &quot;VOLVER AL MENÚ GESTIONAR COMBO&quot;.</h4>
+<h4>. Si el administrador desea cancelar la modificación del Combo:</h4>
 
-<p>El sistema redirige al menú -Gestionar combo a la espera de la selección de alguna opción por parte del administrador.</p>
+<ol><li>El administrador hace clic en el botón &quot;Cancelar&quot;.</li><li>El sistema descarta la modificación del Combo y regresa a la lista de Combos existentes.</li></ol>
           
         </div>
       </section>
