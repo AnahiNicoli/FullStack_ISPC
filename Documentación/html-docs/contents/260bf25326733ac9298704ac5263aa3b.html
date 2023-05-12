@@ -62,38 +62,19 @@
         <h3>Description</h3>
         <div>
           
-            <p>ID: 10 | Nombre: Crear Productos
-Creado por: Juan Gabriel Soto Valenzuela</p>
+            <h1>ID: 10 | Nombre: Crear Productos</h1>
 
-<p>Fecha de Creación: 07/11/2022
-Actualizado por: Juan Gabriel Soto Valenzuela</p>
-
-<p>Fecha de Actualización: 08/11/2022
-Actores: Administrador</p>
-
-<p>Disparador: Selección de opción &quot;Crear Productos&quot;</p>
-
-<p>Descripción: El administrador ingresa a ésta sección para CREAR productos a la base de datos.</p>
-
-<p>Pre-condición: <em>El administrador debe ingresar a gestionar productos y seleccionar la opción -Crear productos </em></p>
-
-<p>Post-condición: Se crea un nuevo producto en la base de datos de forma exitosa</p>
+<ul><li>Creado por: <em>Juan Gabriel Soto Valenzuela</em><ul><li>Fecha de Creación: <em>07/11/2022</em></li></ul></li><li><p>Actualizado por: <em>Damián Guidone</em> </p><ul><li><p>Fecha de Actualización: <em>11/05/2023</em></p></li></ul></li><li><p>Actores: <em>Administrador</em></p></li><li><p>Disparador: <em>Selección de opción &quot;Crear Productos&quot;</em></p></li><li><p>Descripción: <em>El administrador ingresa a ésta sección para CREAR productos a la base de datos.</em></p></li><li><p>Pre-condición: <em>El administrador debe ingresar a gestionar productos y seleccionar la opción -Crear productos </em></p></li><li><p>Post-condición: <em>Se crea un nuevo producto en la base de datos de forma exitosa</em></p></li></ul>
 
 <h3>Flujo Normal</h3>
 
-<p>El administrador seleciona en el punto 9 &quot;Crear Productos&quot;.
-El sistema muestra en pantalla los distintos tipos de productos que puede agregar : Vuelos, excursiones, hospedaje, Otros...
-El administrador selecciona el producto deseado.
-El sistema muestra en pantalla los distintos productos a agregar y pregunta la cantidad deseada.
-El administrador una vez completado los puntos 1 y 3, acepta y aplica los cambios.
-El sistema muestra en pantalla un mensaje con un resumen de la acción Ej: &quot;usted ha agregado XProducto- Xcantidad, está seguro?&quot; con la opciones de &quot;Modificar&quot; o &quot;Aplicar&quot;.
-El administrador Aplica y los productos para agregarlos a la base de datos.</p>
+<ol><li>El administrador selecciona la opción de crear una nuevo producto.</li><li>El sistema muestra un formulario para crear un nuevo producto, que incluye campos para el nombre del producto.</li><li>El administrador ingresa los detalles del nuevo producto.</li><li>El administrador guarda el producto nuevo.</li><li>El sistema valida que los campos obligatorios estén completos.</li><li>El sistema almacena al producto nuevo en la base de datos.</li><li>El sistema muestra un mensaje de confirmación de que el producto nuevo se ha creado correctamente.</li></ol>
 
 <h3>Flujo Alternativo</h3>
 
-<h4>2. El administrador selecciona en el punto 9-1 la opción &quot;Otros...&quot;.</h4>
+<h4>. Si el administrador desea cancelar la creación del producto nuevo:</h4>
 
-<ol><li>El sistema muestra un formulario para completar: Tipo de producto(donde se completa) Detalles(donde se completa) Cantidad(donde se completa).</li><li>El administrador completa el formulario con todos los campos requeridos y acepta.</li><li>El sistema muestra en pantalla un resumen de lo completado, y pide la opción de &quot;MODIFICAR&quot; o &quot;APLICAR&quot;.</li><li>El administrador en caso de selecciona &quot;MODIFICAR&quot;.</li><li>El sistema regresa al estado anterior, el punto 2.2 para continuar nuevamente con el flujo alternativo.</li><li>El administrador selecciona &quot;APLICAR&quot;.</li><li>El sistema muestra en pantalla el mensaje &quot;Agregado con éxito&quot; y pregunta si &quot;Agregar otro producto&quot; o &quot;Volver a la pantalla de Gestión&quot; (Punto9).</li></ol>
+<ol><li>El administrador hace clic en el botón &quot;Cancelar&quot;.</li><li>El sistema descarta el trabajo y regresa a la lista de producto existentes.</li></ol>
           
         </div>
       </section>

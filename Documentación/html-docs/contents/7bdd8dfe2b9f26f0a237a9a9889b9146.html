@@ -62,7 +62,24 @@
         <h3>Description</h3>
         <div>
           
-            <span class="label label-info">none</span>
+            <h1>ID: 15 | Nombre: Consultar Manual de Usuario</h1>
+
+<ul><li>Creado por: <em>Damián Guidone</em> <ul><li>Fecha de Actualización: <em>11/05/2023</em>    </li></ul></li><li><p>Actualizado por: <em>Damián Guidone</em> </p><ul><li><p>Fecha de Actualización: <em>11/05/2023</em></p></li></ul></li><li><p>Actores: <em>Cliente, Administrador.</em></p></li><li><p>Disparador: <em>Necesidad de consultar manual de usuario.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se consulta el manual de usuario.</em></p></li><li><p>Pre-condición: <em>El usuario debe contar con perfil Cliente o Administrador.</em></p></li><li><p>Post-condición: <em>Ninguna.</em></p></li></ul>
+
+<h3>Flujo Normal</h3>
+
+<ol><li>El sistema verifica tipo de usuario (Administrador).</li><li><p>El usuario accede al manual.ID: 18 | Nombre: Consultar MU Administrador
+=================================</p></li><li><p>Creado por: <em>Patricia Illbele</em></p><ul><li>Fecha de Creación: <em>12/11/2022</em></li></ul></li><li><p>Actualizado por: <em>Damián Guidone</em> </p><ul><li><p>Fecha de Actualización: <em>11/05/2023</em></p></li></ul></li><li><p>Actores: <em>Administrador.</em></p></li><li><p>Disparador: <em>Necesidad de consultar manual de usuario de Administrador.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se consulta el manual de usuario para el perfil Administrador.</em></p></li><li><p>Pre-condición: <em>El usuario debe contar con perfil cliente.</em></p></li><li><p>Post-condición: <em>El sistema pone a disposición el manual correspondiente.</em></p></li></ol>
+
+<h3>Flujo Normal</h3>
+
+<ol><li>El sistema verifica tipo de usuario.</li><li>El usuario es Administrador, entonces el sistema ofrece la consulta de ambos manuales.</li></ol>
+
+<h3>Flujo Alternativo</h3>
+
+<h4>2. EL Usuario es un usuario CLiente</h4>
+
+<ol><li>El sistema dispone del manual de usuario para Cliente.</li></ol>
           
         </div>
       </section>
@@ -140,6 +157,15 @@
 
         
         
+<section class="element-list">
+    <h3>Included Use Cases</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='57ecc434d6bddda7129100cef86fe612.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>14- Verificar Identidad</a></li>
+        
+    </ul>
+</section>
+
 
 
         
@@ -383,6 +409,8 @@
         
         <li><a href='99d2902cf89e7ff421b062d247559ddb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Cliente—15- Consultar Manual de usuario)</a></li>
         
+        <li><a href='c6805efa0dc53d19457abd42eeb3f3f2.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(15- Consultar Manual de usuario→14- Verificar Identidad)</a></li>
+        
         <li><a href='4ab1eec597c43b445e4f1e19263b8068.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(16- Consultar MU Cliente→15- Consultar Manual de usuario)</a></li>
         
         <li><a href='68859f676b7bc91f4266a1a098e450d3.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(18- Consultar MU Administrador→15- Consultar Manual de usuario)</a></li>
@@ -402,7 +430,7 @@
         
         <li><a href='99d2902cf89e7ff421b062d247559ddb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Cliente—15- Consultar Manual de usuario)</a></li>
         
-        <li><a href='c6805efa0dc53d19457abd42eeb3f3f2.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(16- Consultar MU Cliente→14- Verificar Identidad)</a></li>
+        <li><a href='c6805efa0dc53d19457abd42eeb3f3f2.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(15- Consultar Manual de usuario→14- Verificar Identidad)</a></li>
         
     </ul>
 </section>

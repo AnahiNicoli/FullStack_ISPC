@@ -62,25 +62,27 @@
         <h3>Description</h3>
         <div>
           
-            <p>Creado por: Solis Patricia
-    Fecha de Creación: 07/11/2022</p>
+            <h1>ID: 5 | Nombre: Gestionar Combos </h1>
 
-<p>Actualizado por: Solis Patricia
-    Fecha de Actualización: 14/11/2022</p>
+<ul><li>Creado por: <em>Solis Patricia</em> <ul><li>Fecha de Creación: <em>07/11/2022</em></li></ul></li><li>Actualizado por: <em>Damián Guidone</em> <ul><li>Fecha de Actualización: <em>11/05/2023</em></li></ul></li><li><p>Actores: <em>Administrador</em></p></li><li><p>Disparador: <em>Necesidad de acceso a zonas y atributos restringidos del sistema por parte del Administrador.</em></p></li><li><p>Descripción: <em>Caso de Uso en donde se accede a la gestión de combo (Crear,Modificar,Eliminar).</em></p></li><li><p>Pre-condición: <em>El Administrador debe loguearse para acceder.</em></p></li><li><p>Post-condición: <em>El Administrador debe seleccionar qué clase de gestión de Combos desea realizar (Crear,Modificar,Eliminar).</em></p></li></ul>
 
-<p>Actores: Administrador</p>
+<h3>Flujo Normal</h3>
 
-<p>Disparador: Necesidad de acceso a zonas y atributos restringidos del sistema.</p>
+<ol><li>El sistema comprueba permisos de Administrador.</li><li>El sistema muestra el catálogo de Combos para que el Administrador pueda ejercer los cambios deseados sobre ellos, crear nuevos o bien eliminarlos.</li><li>El Administrador decide modificar uno de los Combos existentes.</li><li>Pasamos al caso de uso 7- Modificar Combos.</li></ol>
 
-<p>Descripción: Caso de Uso en donde se accede a la gestión de combo (Crear,Modificar,Eliminar).</p>
+<h3>Flujo Alternativo</h3>
 
-<p>Pre-condición: El administrador debe acceder a caracterìsticas restingidas del sistema.</p>
+<h4>2. El sistema no identifica al usuario como administrador.</h4>
 
-<p>Post-condición: El administrador debe seleccionar qué clase de gestión de combo desea realizar (Crear,Modificar,Eliminar).</p>
+<pre><code>	1. Pasamos al caso de uso 14- Verificar Identidad.</code></pre>
 
-<p>El sistema brinda acceso al administrador.
-El sistema muestra en pantalla las distintas opciones de gestión de combo: Crear-Modificar-Eliminar.
-El administrador selecciona la opción deseada según su requirimiento.</p>
+<h4>4. EL Administrador decide crear un nuevo Combo.</h4>
+
+<pre><code>	1. Pasamos al caso de uso 6- Crear Combo.</code></pre>
+
+<h4>4. El Administrador decide eliminar un Combo.</h4>
+
+<pre><code>	1. Pasamos al caso de uso 8. Eliminar Combo.</code></pre>
           
         </div>
       </section>
