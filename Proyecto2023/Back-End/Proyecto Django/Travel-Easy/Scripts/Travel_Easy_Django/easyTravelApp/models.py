@@ -1,11 +1,17 @@
 from django.db import models
 
 # Create your models here.
-class Usuario(models.Model):
-    id_Usuario = models.AutoField(primary_key=True)
-    nombre= models.CharField(max_length=20, blank=False)
-    apellido= models.CharField(max_length=20, blank=False)
-    mail = models.CharField(max_length=30, blank=False)
+class Usuarios(models.Model):
+    USU_ID = models.AutoField(primary_key=True)
+    USU_NOMBRES= models.CharField(max_length=30, blank=False)
+    USU_APELLIDOS= models.CharField(max_length=30, blank=False)
+    USU_FECH_NAC= models.DateField(blank=False)
+    USU_DNI= models.IntegerField(max_length=30)
+    USU_PASS= models.CharField(max_length=30, blank=FALSE)
+    USU_NPERFIL= models.CharField
+    USU_MAIL = models.CharField(max_length=30, blank=False)
+    USU_CELULAR= models.CharField(max_length=30, blank=False)
+    USU_PUNTAJE= models.IntegerField
     
     class Meta:
         db_table="Usuario"
