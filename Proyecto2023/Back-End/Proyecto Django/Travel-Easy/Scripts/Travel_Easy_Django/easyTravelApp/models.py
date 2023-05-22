@@ -23,7 +23,7 @@ class Usuarios(models.Model):
     USU_APELLIDOS= models.CharField(max_length=30, blank=False)
     USU_FECH_NAC= models.DateField(blank=False)
     USU_DNI= models.IntegerField(max_length=30)
-    USU_PASS= models.CharField(max_length=30, blank=FALSE)
+    USU_PASS= models.CharField(max_length=30, blank=False)
     USU_NPERFIL= models.CharField
     USU_MAIL = models.CharField(max_length=30, blank=False)
     USU_CELULAR= models.CharField(max_length=30, blank=False)
