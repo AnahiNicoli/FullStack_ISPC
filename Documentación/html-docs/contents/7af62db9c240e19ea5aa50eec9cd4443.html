@@ -181,8 +181,15 @@
           
           <tr>
             <td>private</td>
-            <td><a href="9f13229af5393ce1e0e9b11fc1c80160.html">activa</a></td>
-            <td>boolean </td>
+            <td><a href="9f13229af5393ce1e0e9b11fc1c80160.html">estado</a></td>
+            <td>int </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="8660056aff3b6f7fc37eacf38a5020c0.html">listaImagenes</a></td>
+            <td>Array </td>
             <td></td>
           </tr>
           
@@ -192,6 +199,126 @@
 
       <!-- Operations -->
 
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8465dd5ca4ef9a75db6dfa5b82bc83fb.html">insertPublicidad(pub: Publicidad)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1bd4609fdbb94e88c12d9a4941f32a4f.html">updatePublicidad(pub: Publicidad)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8227e78376548040aa06a94182799ba5.html">deletePublicidad(pub: Publicidad)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1030e9cfbe2efc8f5677ff471b89e684.html">selectPublicidad(pub: Publicidad)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="56bfafc41ec9196b91e5f460a3499c06.html">selectAllPublicidad()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d50b058b05d8007b7d81633f04c5227d.html">selectImagenes(pub: Publicidad)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8593fd772a732714b01bb1cdb01e755d.html">getID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e63b8986ffde1ef30070e88cca4ca4d1.html">setID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e518e053bc7e9b43b5ca3ddd1e03a7b7.html">getFecha_inicio(): date</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8b778337bdb55ad4bfc86d6ddd5de3dd.html">setFecha_inicio(value: date)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="39bb1bd08f8d02d29d96e775ffb8c6dc.html">getFecha_fin(): date</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c7dc7515f03329eac3f446bfb9a06343.html">setFecha_fin(value: date)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5087b75fa27d642a0346c5f230a43bc6.html">getDetalle(): varchar (100)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="83ad74757d6854e5c2ce45d617a60477.html">setDetalle(value: varchar (100))</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3967c03ff7edb1162b0d95a431c145dd.html">getEstado(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3cc5fe1e72f40d451afb0730b0d05a49.html">setEstado(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="0fd2c351c08a3da9dc5f7c662e2e9543.html">getListaImagenes(): Array</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fd0cccb4534bdcb423d9bce56b912de8.html">setListaImagenes(value: Array)</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
       
 
       <!-- Receptions -->
@@ -399,9 +526,9 @@
         
         <li><a href='26a635db23b7c7ac01b50d7d38718550.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Publicidad—Servicio)</a></li>
         
-        <li><a href='cb45d9edd7ce3342b6f1002e595c613c.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Publicidad—Empresa)</a></li>
-        
         <li><a href='c195ae807d4d96bb704cdf1eab350e58.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorPublicidad—Publicidad)</a></li>
+        
+        <li><a href='950880f61547e43cbb8445e6ac14cd13.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Empresa—Publicidad)</a></li>
         
     </ul>
 </section>
@@ -417,8 +544,6 @@
     <ul class="nav nav-list">
         
         <li><a href='26a635db23b7c7ac01b50d7d38718550.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Publicidad—Servicio)</a></li>
-        
-        <li><a href='cb45d9edd7ce3342b6f1002e595c613c.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Publicidad—Empresa)</a></li>
         
     </ul>
 </section>

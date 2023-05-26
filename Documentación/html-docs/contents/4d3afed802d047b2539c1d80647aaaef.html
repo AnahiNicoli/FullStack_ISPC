@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Productos</title>
+    <title>Producto</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>Productos</h1>
+      <h1>Producto</h1>
 
       <!-- Type and Stereotype -->
 
@@ -53,7 +53,7 @@
           <span class="label label-info"><a href='11f5ffbff2e30923c248b3ac1406ae94.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Modelo</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='4d3afed802d047b2539c1d80647aaaef.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Productos</a></span>
+          <span class="label label-info"><a href='4d3afed802d047b2539c1d80647aaaef.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Producto</a></span>
         
       </section>
 
@@ -152,72 +152,86 @@
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="dea8e2883c7ad5b37013f098505217b9.html">ID</a></td>
             <td>int </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="2899f3a232e6142040d2e5851136a068.html">fecha_inicio</a></td>
             <td>date </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="465b3deeab25963f0064ea119b452b7f.html">fecha_fin</a></td>
             <td>date </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="5f6a43a75a710c8b3ddff4a6dcd2be60.html">detalle</a></td>
             <td>varchar (100) </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="864446eefad254601d875cfcd79de3f8.html">activa</a></td>
-            <td>boolean </td>
+            <td>int </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="07b01eb4542094db7d7b8750c25be222.html">nombre</a></td>
             <td>varchar(30) </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="dc05c4fce720fabc95baac9a613c2ccb.html">precio</a></td>
             <td>float </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="79ca588995629dde359a99c240ba7da6.html">porcentaje_reserva</a></td>
             <td>int </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="bd9117f3caf13298b053e133b0f59917.html">fecha_hora_reserva</a></td>
             <td>date time </td>
             <td></td>
           </tr>
           
           <tr>
-            <td>public</td>
+            <td>private</td>
             <td><a href="19e3261b4353e434e28e388751d33c42.html">orden</a></td>
             <td>int </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="6c2fd9088cb7e7205188705f86699898.html">subcategoria</a></td>
+            <td><a href='7cc82e46487d6fd07de135aa10020ffb.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subcategoria</a> </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="0b365f05550a455eba829d4acc837803.html">nivel</a></td>
+            <td><a href='1741089cab96b380e63ee157db4b3052.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Nivel</a> </td>
             <td></td>
           </tr>
           
@@ -239,19 +253,187 @@
           
           <tr>
             <td>public</td>
-            <td><a href="c3996c9ef5d9e1112d0bb948181d9191.html">crear_productos()()</a></td>
+            <td><a href="0fe5fc6d1487da56e0da06d2ecf0e678.html">getID(): int</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="209dbeb66ecb2bfba7f576c6541869fa.html">modificar_productos()()</a></td>
+            <td><a href="dbd5dcb60af5315aef8bd2b2c10ed49b.html">setID(value: int)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="b6d09fb7620a0746a267970e68012960.html">eliminar_productos()()</a></td>
+            <td><a href="809a39ae82a2d414cb0a1a978985d3b5.html">getFecha_inicio(): date</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a47d6a859908b1e3ea5986ef54d6b6c0.html">setFecha_inicio(value: date)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9a86ca2d7296b6d63dc4d4a867f93682.html">getFecha_fin(): date</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9d06354a3d32858660e313f0b532d38c.html">setFecha_fin(value: date)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="054ed2dcce037747854eb01106716147.html">getDetalle(): varchar (100)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="59eb19d2810a046320bda0dae0f67bcd.html">setDetalle(value: varchar (100))</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="54191d7d1f88b189766a985cdd1c9d5e.html">getActiva(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="91899acd57556f71ee40ed76122b0d73.html">setActiva(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2b9976e92ee6cc6cda85936e46666859.html">getNombre(): varchar(30)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="ac96e2a14455633c88b6f90768843367.html">setNombre(value: varchar(30))</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3a20c6190801222febb900c05f1740c2.html">getPrecio(): float</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="baa8db9859f19d7a740ddad30667d1c5.html">setPrecio(value: float)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="92fbbd169feda5a26a5f0ac987b24c9c.html">getPorcentaje_reserva(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="0e8a77e0b070e01f45cd5521b0c40109.html">setPorcentaje_reserva(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="50811f737e61f53f88d1f7047d5c3843.html">getFecha_hora_reserva(): date time</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3fb584abb681553142e543c00a1d715b.html">setFecha_hora_reserva(value: date time)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="66218cc7d89949bcbae7d14b66c2dd59.html">getOrden(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3f396f3f66db3486ff0280796c3ce728.html">setOrden(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="55763bb80aadd954c6d1f0061ef88478.html">getID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="73acbbbfbb88a710f550163ee0f6fc79.html">setID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6729b514a247abfb95a5b3e55e5df902.html">getSubcategoria(): Subcategoria</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8073ba3bde9e03158de163bbc889a02f.html">setSubcategoria(value: Subcategoria)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="ee9453884d4510dec8893b565c9148f0.html">getNivel(): Nivel</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6b1f9d7346a854a05bc01bea693bb997.html">setNivel(value: Nivel)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="4a9967a88a0dd66f1ac3e9dedb0287ef.html">insertProducto(prod: Producto)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5c72be4092724cefb2a36d4211430140.html">updateTipoServicio(prod: Producto)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d6d6a2547348413436436dda9725790d.html">deleteTipoServicio(prod: Producto)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="767696a34ba51bf11386c4a58430d94a.html">selectProducto(prod: Producto)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="eb97ba173d203a380dc2e0fb9b75661d.html">selectAllProducto(prod: Producto)</a></td>
             <td></td>
           </tr>
           
@@ -355,7 +537,7 @@
     
     <tr>
         <td>name</td>
-        <td>Productos</td>
+        <td>Producto</td>
     </tr>
     
     
@@ -447,6 +629,15 @@
 
         
         
+<section class="element-list">
+    <h3>Dependencies</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='7cc82e46487d6fd07de135aa10020ffb.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subcategoria</a></li>
+        
+    </ul>
+</section>
+
 
 
         
@@ -462,11 +653,15 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='de76c81cb0de06a126829a17966ce813.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Productos—Combos)</a></li>
+        <li><a href='de76c81cb0de06a126829a17966ce813.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Producto—Combos)</a></li>
         
-        <li><a href='91fbe9085d1466b0649095d4b6a30d60.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Productos—Accion)</a></li>
+        <li><a href='7bda22356065917ddb782e3d8f013e77.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Producto—Nivel)</a></li>
         
-        <li><a href='3d0ee8419411c2cbd1c5f3c9e7313f0d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorProductos—Productos)</a></li>
+        <li><a href='c3e4be5fa5232b8a732aad9700dd3617.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Producto→Subcategoria)</a></li>
+        
+        <li><a href='ca89d3d9d8b3403c4a5127cdccef00bc.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Productos—Producto)</a></li>
+        
+        <li><a href='a4b2c2e70f9a8cd9068dd84c16373226.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(DetalleProducto—Producto)</a></li>
         
     </ul>
 </section>
@@ -481,9 +676,11 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='de76c81cb0de06a126829a17966ce813.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Productos—Combos)</a></li>
+        <li><a href='de76c81cb0de06a126829a17966ce813.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Producto—Combos)</a></li>
         
-        <li><a href='91fbe9085d1466b0649095d4b6a30d60.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Productos—Accion)</a></li>
+        <li><a href='7bda22356065917ddb782e3d8f013e77.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Producto—Nivel)</a></li>
+        
+        <li><a href='c3e4be5fa5232b8a732aad9700dd3617.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Producto→Subcategoria)</a></li>
         
     </ul>
 </section>
