@@ -161,7 +161,7 @@
           <tr>
             <td>private</td>
             <td><a href="dcdc473514f4a3af5524035937158a90.html">tipoUsuario</a></td>
-            <td>int </td>
+            <td><a href='296bcc32076b3f410cc79855bee6275e.html'><span class='node-icon staruml-icon icon-UMLClass'></span>TipoUsuario</a> </td>
             <td></td>
           </tr>
           
@@ -175,7 +175,7 @@
           <tr>
             <td>private</td>
             <td><a href="6d895dc728264e7cba362cb1988ebb4d.html">clienteSeleccionado</a></td>
-            <td><a href='cde83c3d39b5b54612776de414676121.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Cliente</a> </td>
+            <td><span class='label label-info'>none</span> </td>
             <td></td>
           </tr>
           
@@ -190,6 +190,34 @@
             <td>private</td>
             <td><a href="3d65ca11fd4411018b08a3c33f994e48.html">adminID</a></td>
             <td>int </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="3a2f922cc1af573baf1c7655cbd650ec.html">listadoUsuarios</a></td>
+            <td>Array </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="e288ee74da6e38de2f82536ac4ebfc14.html">tipoDNI</a></td>
+            <td><a href='22f8c575b9e9422ee8fb78e6545e5b75.html'><span class='node-icon staruml-icon icon-UMLClass'></span>TipoDNI</a> </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="e5624e9ebc764549c0514701b08503ed.html">listadoDNI</a></td>
+            <td>Array </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="9b4c81a0df9d3ccb6a39c5356597c566.html">listadoTipoUsuarios</a></td>
+            <td>Array </td>
             <td></td>
           </tr>
           
@@ -217,25 +245,211 @@
           
           <tr>
             <td>public</td>
-            <td><a href="844fc4d4a4fe50895e6e9586bc4445cb.html">GetDatosCompletos()</a></td>
+            <td><a href="844fc4d4a4fe50895e6e9586bc4445cb.html">cargaListado()</a></td>
             <td><p>Busca los datos del usuario en la Base de Datos</p></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="72be4e19b199edc3963a2705ec316a3f.html">crear_perfil()</a></td>
+            <td><a href="72be4e19b199edc3963a2705ec316a3f.html">crear_perfil(usu: Usuario)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="1b35b27ed661298a0b59150101b3dd5e.html">modificar_perfil()</a></td>
+            <td><a href="1b35b27ed661298a0b59150101b3dd5e.html">modificar_perfil(usu: Usuario)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="f38b2e08bc67274980da30792e65e582.html">eliminar_perfjil()</a></td>
+            <td><a href="f38b2e08bc67274980da30792e65e582.html">eliminar_perfjil(usu: Usuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d979ce3dad52a058704ea1f5d95820b3.html">filtrarListado()</a></td>
+            <td><p>Busca los datos del usuario en la Base de Datos</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="19459f4fded91a25c45a9f196fccfa6c.html">verificarIdentidad(tusu: int, usu: String, cla: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="7b9694010cbc93d4dfa85740f266cf08.html">cargaListadoDNI()</a></td>
+            <td><p>Busca los datos del usuario en la Base de Datos</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="71b1581e000ebdd9b438927d96fbeb34.html">cargaListadoTipoUsuarios()</a></td>
+            <td><p>Busca los datos del usuario en la Base de Datos</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8165b87f415a953a8a112fd5d8456e89.html">filtrarListadoTipoUsuario()</a></td>
+            <td><p>Busca los datos del usuario en la Base de Datos</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="becd791ab2461f5295e95806aeea447a.html">crear_TipoDNI(dni: TipoDNI)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8a5475bfda85c35ca0b885ca90d1bb73.html">crear_TipoUsuario(tusu: TipoUsuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5ee97bf4040523521eb70beb878e6841.html">modificar_TipoDNI(dni: TipoDNI)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6f7b0406e447609706dfd6bf64a684d5.html">modificar_TipoUsuario(tusu: TipoUsuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="11ab303be3511c0b5fec36b6350d02ee.html">eliminar_TipoDNI(dni: TipoDNI)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2bce4dd084ce18c4de8de73aaf0e13f8.html">eliminar_TipoUsuario(tusu: TipoUsuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="eabbd6a24d44fe10bfca5964b3dd482f.html">getUsuarioID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e2412978d199d8c788b45867282b82ea.html">setUsuarioID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d4c9fe00634e70fcc718f077794c1ce7.html">getTipoUsuario(): TipoUsuario</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="baebceb82b61faa3527753d78282ac7c.html">setTipoUsuario(value: TipoUsuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="0f310101fe9c95fc7f23ae12336e73ef.html">getUsuarioSeleccionado(): Usuario</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a88a8c3fd8dc01b6131096e26c920b36.html">setUsuarioSeleccionado(value: Usuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="378788f1e33b76b3aa3e06b1bf04c515.html">getClienteSeleccionado(): null</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f8775726dd4fe9a847a1a3f0fda0c130.html">setClienteSeleccionado(value)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="30a9a55bd42296dfbda23da1999e453c.html">getClienteID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6d965b6d53fbf9ddac6d966481f3bb9d.html">setClienteID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="341d0f85a33c2f9fb484f11b6511ccd6.html">getAdminID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="23c5a8c00a16b0b354b99199bf3f6225.html">setAdminID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1a801ffa723ec8ec013952136be8b575.html">getListadoUsuarios(): Array</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8e29f77d7f4052a52762d8d7b59f73d1.html">setListadoUsuarios(value: Array)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="b00ee01e7366294ce1e96bec836a3ba9.html">getTipoDNI(): TipoDNI</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e790d87fcd2af156e7dcb29fdffe6107.html">setTipoDNI(value: TipoDNI)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c66630f87f9482cc26d3fb5328af653d.html">getListadoDNI(): Array</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8c92772a3a1a4efc5127ce9562859d98.html">setListadoDNI(value: Array)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="810a49f65e744f0626f68c5459aaa75b.html">getListadoTipoUsuarios(): Array</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9cc02c11079edee0001bc3d18933cfec.html">setListadoTipoUsuarios(value: Array)</a></td>
             <td></td>
           </tr>
           
@@ -446,9 +660,19 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
+        <li><a href='3932f81dfe5b661cba3a1bca1916c913.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(FormularioTipoDNI—ControladorUsuarios)</a></li>
+        
+        <li><a href='a7af1742622c8c4c0399480673a2a587.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(FormularioTipoUsuario—ControladorUsuarios)</a></li>
+        
+        <li><a href='ecd5af92fd69e4be27cd7ebeeb015824.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(FormularioUsuario—ControladorUsuarios)</a></li>
+        
         <li><a href='95052ada2a6c34dcfa46266cc27c33a3.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(GestionarUsuarios—ControladorUsuarios)</a></li>
         
         <li><a href='ec1b26cf4923e2d37b206b42884612f9.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—Usuario)</a></li>
+        
+        <li><a href='2fa998a736c53c73f6e98ed54ca3e11d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—TipoDNI)</a></li>
+        
+        <li><a href='b8f557e0051bbc7c48af7cec1c5ee1e2.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—TipoUsuario)</a></li>
         
     </ul>
 </section>
@@ -464,6 +688,10 @@
     <ul class="nav nav-list">
         
         <li><a href='ec1b26cf4923e2d37b206b42884612f9.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—Usuario)</a></li>
+        
+        <li><a href='2fa998a736c53c73f6e98ed54ca3e11d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—TipoDNI)</a></li>
+        
+        <li><a href='b8f557e0051bbc7c48af7cec1c5ee1e2.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—TipoUsuario)</a></li>
         
     </ul>
 </section>

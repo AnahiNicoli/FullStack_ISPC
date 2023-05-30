@@ -95,17 +95,6 @@
 
         
         
-<section class="element-list">
-    <h3>Specialized Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='cde83c3d39b5b54612776de414676121.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Cliente</a></li>
-        
-        <li><a href='1ad6466893ab58b438595709b0d79499.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Administrador</a></li>
-        
-    </ul>
-</section>
-
 
 
         
@@ -164,78 +153,92 @@
           
           <tr>
             <td>private</td>
-            <td><a href="5898daff3fb1e4bc3a307746fe98df54.html">Nombres</a></td>
-            <td>v </td>
+            <td><a href="5898daff3fb1e4bc3a307746fe98df54.html">nombre</a></td>
+            <td>String </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="106432e00e83639a5147361a839c4ed3.html">ID</a></td>
+            <td><a href="106432e00e83639a5147361a839c4ed3.html">iD</a></td>
             <td>int </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="b74d5740e49236b8d92c8ed8a1b9f43c.html">Apellidos</a></td>
-            <td><span class='label label-info'>none</span> </td>
+            <td><a href="b74d5740e49236b8d92c8ed8a1b9f43c.html">apellidos</a></td>
+            <td>String </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="28545459f550ad5572c899f4b6aeb427.html">Fecha_nacimiento</a></td>
+            <td><a href="28545459f550ad5572c899f4b6aeb427.html">fecha_nacimiento</a></td>
             <td>date </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="a48162e6de399974598e4ab8b21db1b9.html">DNI</a></td>
+            <td><a href="a48162e6de399974598e4ab8b21db1b9.html">dni</a></td>
             <td>int </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="06225202cec9ae4c55d90844033b4cc5.html">Password</a></td>
-            <td>varchar(30) </td>
+            <td><a href="06225202cec9ae4c55d90844033b4cc5.html">cla</a></td>
+            <td>String </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="200d9dc6c9746ba9cd2ea2b6a97b979b.html">Nombre_perfil</a></td>
-            <td>varchar(30) </td>
+            <td><a href="200d9dc6c9746ba9cd2ea2b6a97b979b.html">nombre_perfil</a></td>
+            <td>String </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="002491853994ae0508e75a1cc7f86fbf.html">Activo</a></td>
-            <td>boolean </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>private</td>
-            <td><a href="90dfb13f055c363b7bbe4397ace2972f.html">E-Mail</a></td>
-            <td>varchar(50) </td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>private</td>
-            <td><a href="710275c718be64da1e8b322283f1e14a.html">Celular</a></td>
+            <td><a href="002491853994ae0508e75a1cc7f86fbf.html">estado</a></td>
             <td>int </td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="4275fab26863dcc55a100a6e2f42b4d2.html">Puntaje</a></td>
-            <td>int </td>
+            <td><a href="90dfb13f055c363b7bbe4397ace2972f.html">e_mail</a></td>
+            <td>String </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="710275c718be64da1e8b322283f1e14a.html">celular</a></td>
+            <td>String </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="4275fab26863dcc55a100a6e2f42b4d2.html">puntaje</a></td>
+            <td>double </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="1b1a6fb688945a3f5b7e3fb539de4182.html">tipoDni</a></td>
+            <td><a href='22f8c575b9e9422ee8fb78e6545e5b75.html'><span class='node-icon staruml-icon icon-UMLClass'></span>TipoDNI</a> </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="8614bc0d52c7bd9a7c8530f1f762eff8.html">tipoUsu</a></td>
+            <td><a href='296bcc32076b3f410cc79855bee6275e.html'><span class='node-icon staruml-icon icon-UMLClass'></span>TipoUsuario</a> </td>
             <td></td>
           </tr>
           
@@ -257,43 +260,193 @@
           
           <tr>
             <td>public</td>
-            <td><a href="be274f3bb815a82b17e6666842f2722f.html">crear_perfil()</a></td>
+            <td><a href="be274f3bb815a82b17e6666842f2722f.html">crear_perfil(usu: Usuario)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="1266f52f3194a9aa0d972fb72e9ef8b8.html">modificar_perfil()</a></td>
+            <td><a href="1266f52f3194a9aa0d972fb72e9ef8b8.html">modificar_perfil(usu: Usuario)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="725347ad7b2604af8f92c092e361160c.html">eliminar_perfil()</a></td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="cf98f496d165ad030f7fbd968deeee41.html">consultar_manual_usuario()</a></td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="81bbf6014e1998cffea2064a80709055.html">consultar_perfil_empresa()</a></td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="4e03a1c3c65ea6b7861e2a264a2246dd.html">consultar_catalogo()</a></td>
+            <td><a href="725347ad7b2604af8f92c092e361160c.html">eliminar_perfil(usu: Usuario)</a></td>
             <td></td>
           </tr>
           
           <tr>
             <td>public</td>
             <td><a href="435a3da263b94a48b9ebd34ef44979dc.html">verificar_identidad()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="ee61c8c84dfe98f61c955d20c71faa91.html">selectUsuario(usu: Usuario)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f03aa0b46b0f04a2a0ff5021c4421e0c.html">selectAllUsuarios()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="84de6ca55609a383de2cf7bdc7c61dc7.html">getNombre(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2d97438bba8d1fb716733d11c40a2351.html">setNombre(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="69f57f25249f76eebd3131845e132aa7.html">getID(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="000015bc9b74869a55c79199700782ad.html">setID(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e0b34a74569464eddafc60f1d6bf2aac.html">getApellidos(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f0ecc06fb9c705ae8c5d845d0da16428.html">setApellidos(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fb793178f68decad330c3287e6d26ede.html">getFecha_nacimiento(): date</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="49ef7d51aaa6ae5afd21c17bb6c18700.html">setFecha_nacimiento(value: date)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3728c824af838cc42bd533f411f4698e.html">getDni(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f64a489ef08d126a001b549ce20d35b9.html">setDni(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6fdc5ed3fedbdd6c6fa51449985b467c.html">getCla(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9b58ab6a4fde126a1d6cfdc36cc8be3b.html">setCla(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2368d9801fade6778573c1fc19d8877e.html">getNombre_perfil(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1ebcb8de5698d27053dcb14f8ffd11a3.html">setNombre_perfil(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d555ff0f2fadf543b6b23abe5f313380.html">getEstado(): int</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="856e0e9d0736bf06b8553aa015d2367f.html">setEstado(value: int)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1b72648837e830bdd83105200c89276a.html">getE_mail(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="eccecdf13261032245971242ffe7e2d3.html">setE_mail(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="40c402d4a30b8c08f862e715b1288ab7.html">getCelular(): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="023595cba8e9df5cdf6e8fcd35db1220.html">setCelular(value: String)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a04b26c18247a369ecc53187e4fa91d3.html">getPuntaje(): double</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fbd40e8cbc2dd83780caacfe759156d3.html">setPuntaje(value: double)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="407eda0a4e996b991ef3a5070026594a.html">getTipoDni(): TipoDNI</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2be8f852d25c1cda4cfb35eacdf23016.html">setTipoDni(value: TipoDNI)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="bf717c7bded1a3849542b180d87111d6.html">getTipoUsu(): TipoUsuario</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5a429c5edff5c01945a57282835b39f2.html">setTipoUsu(value: TipoUsuario)</a></td>
             <td></td>
           </tr>
           
@@ -507,10 +660,6 @@
         <li><a href='99e935f18b3e4d26adf1530faead0b27.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Usuario—TipoUsuario)</a></li>
         
         <li><a href='791063174440953cee4b6d79b7b22006.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Usuario—TipoDNI)</a></li>
-        
-        <li><a href='cb838da3107b5958fc4206cb7061b76a.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(Cliente→Usuario)</a></li>
-        
-        <li><a href='e5b2a19c1fd8044d7af6f970bb24b6d1.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(Administrador→Usuario)</a></li>
         
         <li><a href='ec1b26cf4923e2d37b206b42884612f9.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorUsuarios—Usuario)</a></li>
         

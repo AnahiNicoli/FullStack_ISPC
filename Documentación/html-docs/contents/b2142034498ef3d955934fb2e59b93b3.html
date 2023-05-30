@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>ControlEmpresa</title>
+    <title>ControladorEmpresa</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>ControlEmpresa</h1>
+      <h1>ControladorEmpresa</h1>
 
       <!-- Type and Stereotype -->
 
@@ -53,7 +53,7 @@
           <span class="label label-info"><a href='41d05d11e32ab07b1566f322ee023132.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Controlador</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='b2142034498ef3d955934fb2e59b93b3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>ControlEmpresa</a></span>
+          <span class="label label-info"><a href='b2142034498ef3d955934fb2e59b93b3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>ControladorEmpresa</a></span>
         
       </section>
 
@@ -141,9 +141,102 @@
       <!-- Attributes -->
 
       
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="5775a24a572918bcb11b2460de5e648f.html">arrayDeEmpresas</a></td>
+            <td>Array </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="fef86fd2cbcc5926414acbd7acec052f.html">empresaSeleccionada</a></td>
+            <td><a href='d7b5bac1861d8368e87fb1adcbc12144.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Empresa</a> </td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
 
       <!-- Operations -->
 
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="b03b4d801ee1b81ba943d407b4707fab.html">crear_empresa(emp: Empresa)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="cd3793ba8d1787759d795280baf6b230.html">modificar_empresa(emp: Empresa)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="dec920bfe6fd36db1f71babd241134b5.html">eliminar_empresa(emp: Empresa)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="19bc02d4f9cdff87ca6be18772072963.html">cargarListado()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="b7300ff73fbf8287fbbf05155fbfef99.html">filtrarListado()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="7131eae92bd36910afd6158d74ffabe0.html">getArrayDeEmpresas(): Array</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="da92eb0a98ad498b1bb725d6a34a5159.html">setArrayDeEmpresas(value: Array)</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="49001c2e5522fa9a70c48c672049bd5f.html">getEmpresaSeleccionada(): Empresa</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="508e17e119ec54fcb416251249e8a292.html">setEmpresaSeleccionada(value: Empresa)</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
       
 
       <!-- Receptions -->
@@ -242,7 +335,7 @@
     
     <tr>
         <td>name</td>
-        <td>ControlEmpresa</td>
+        <td>ControladorEmpresa</td>
     </tr>
     
     
@@ -349,9 +442,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='c477f375308e1df9508186430d38571d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(FormularioEmpresa—ControlEmpresa)</a></li>
+        <li><a href='c477f375308e1df9508186430d38571d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(FormularioEmpresa—ControladorEmpresa)</a></li>
         
-        <li><a href='cd103099990ab66a600891093c3a3367.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControlEmpresa—Empresa)</a></li>
+        <li><a href='70ed6fece40aed0e8a787e523d9f73d8.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(GestionarEmpresa—ControladorEmpresa)</a></li>
+        
+        <li><a href='cd103099990ab66a600891093c3a3367.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorEmpresa—Empresa)</a></li>
         
     </ul>
 </section>
@@ -366,7 +461,7 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='cd103099990ab66a600891093c3a3367.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControlEmpresa—Empresa)</a></li>
+        <li><a href='cd103099990ab66a600891093c3a3367.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(ControladorEmpresa—Empresa)</a></li>
         
     </ul>
 </section>
