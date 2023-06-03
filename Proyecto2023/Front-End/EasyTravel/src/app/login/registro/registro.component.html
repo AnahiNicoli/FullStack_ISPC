@@ -1,1 +1,36 @@
 <p>registro works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Validación de Código</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h3>Vamos a validar tu correo electrónico y a crear una contraseña</h3>
+        <form>
+          <div class="form-group">
+            <label for="code">Ingresá el código que te enviamos por correo electrónico y creá una nueva contraseña</label>
+            <input type="text" class="form-control" id="code" placeholder="Ingresa el código de validación">
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña nueva </label>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña nueva">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Confirma tu contraseña">
+          </div>
+          <button type="submit" class="btn btn-warning">Crear</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
