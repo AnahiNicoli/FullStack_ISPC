@@ -1,0 +1,124 @@
+.encabezado {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  
+  
+  
+  .menu-container {
+    width: 200px;
+    float: left;
+    position: relative;
+  }
+  
+  
+  
+  .menu-label {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%) rotate(-90deg);
+    color: red;
+    margin-right: 100px;
+    font-weight:bold;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    border: none;
+    border-bottom: none;
+    
+  }
+  .menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  .menu li a:hover {
+    background-color: #ccc;
+  }
+  
+  .contenido-container {
+    margin-left: 220px;
+    padding: 10px;
+    border-left: 2px solid #afafaf;
+    position: relative;
+  }
+  
+  .contenido-container div {
+    display:none;
+  }
+  
+  .contenido-container div:first-child {
+    display: block;
+  }
+  
+  
+  
+  .menu-item {
+    padding: 10px;
+    
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .menu-item.activo {
+    font-weight: bold;
+    border-left: 2px solid rgb(0, 0, 0);
+    padding-left: 10px;
+  }
+  
+  
+  .editar-btn {
+    display: block;
+    background-color: #bebebe;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+  
+    left: 300px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .formulario-container {
+    border: 1px solid black;
+    padding: 20px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .campo label {
+    margin-bottom: 5px;
+  }
+  
+  .campo input {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+  }
