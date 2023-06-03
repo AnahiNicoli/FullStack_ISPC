@@ -18,6 +18,8 @@ import { CarritoComponent } from './carrito/carrito.component';
 import { CarritoTotalComponent } from './carritoTotal/carrito-total/carrito-total.component';
 import { CarritoPagarComponent } from './carritoPagar/carrito-pagar/carrito-pagar.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { LoginComponent } from './login/login/login.component';
+import { RegistroComponent } from './login/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { PerfilComponent } from './perfil/perfil.component';
     CarritoComponent,
     CarritoTotalComponent,
     CarritoPagarComponent,
-    PerfilComponent
+    PerfilComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
