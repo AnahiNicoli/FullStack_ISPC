@@ -24,7 +24,9 @@
           <a class="nav-link disabled text-success" href="#ayuda">Ayuda</a>
         </li>
         <img src="../../assets/img/Icons/store-solidWhite.svg" alt="store" routerLink="carrito" id="icon-store">
-        <img src="../../assets/img/Icons/user-solid.svg" alt="user" routerLink="login" id="icon-user">
+        <img src="../../assets/img/Icons/user-solid.svg" *ngIf="!UserLoginOn" alt="Iniciar Sesión" routerLink="login" id="icon-user">
+        <img src="../../assets/img/Icons/user-solid.svg" *ngIf="UserLoginOn" alt="Cerrar Sesión" routerLink="login" id="icon-user1">
+
       </ul>
     </div>
   </div>

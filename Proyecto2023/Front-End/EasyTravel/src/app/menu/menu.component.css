@@ -4,9 +4,19 @@
     margin-left: 65px;
     height: 1.8em;
     cursor: pointer;
+    color: azure;
     
 }
 
+
+#icon-user1{
+    margin-top: 3px;
+    margin-left: 65px;
+    height: 1.8em;
+    cursor: pointer;
+    color: azure;
+    
+}
 
 /*para icono de store/carrito */
 #icon-store{
@@ -14,5 +24,6 @@
     margin-left: 65px;
     height: 1.8em;
     cursor: pointer;
+    color: azure;
 }
 
