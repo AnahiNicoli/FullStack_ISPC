@@ -1,5 +1,9 @@
 div{
-    background-color: dimgrey;
+   padding-top: 2px;
+   padding-bottom: 5px;
+    background-color: #e2e0dc
+
+    
 }
 #titulo{
     margin-left: 25%;

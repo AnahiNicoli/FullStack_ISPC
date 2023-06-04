@@ -1,4 +1,4 @@
-<p>login works!</p>
+
 
 
 <!DOCTYPE html>
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+<div id="login-component">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -22,10 +23,10 @@
             <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
           </div>
 
-          <button type="submit" class="btn btn">Olvidé mi contraseña</button>
+          <button type="submit" class="btn btn" routerLink="registro">Olvidé mi contraseña</button>
 
           <div>
-          <button type="submit" class="btn btn">Volver</button>
+          <button type="submit" class="btn btn" routerLink="/inicio">Volver</button>
 
           <button type="submit" class="btn btn-warning">Iniciar Sesión</button>
         </div>
@@ -34,7 +35,7 @@
       </div>
     </div>
   </div>
-
+</div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

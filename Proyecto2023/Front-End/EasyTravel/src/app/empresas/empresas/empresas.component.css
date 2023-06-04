@@ -1,5 +1,8 @@
 .empresas{
-    background-color: rgb(125, 126, 126);
+    padding-left: 18em;
+    padding-right: 18em;
+    padding-bottom: 15px;
+    background-color:#e2e0dc;
 }
 h1{
     text-align: center;

@@ -1,0 +1,18 @@
+/*para icono de usuario/login*/
+#icon-user{
+    margin-top: 3px;
+    margin-left: 65px;
+    height: 1.8em;
+    cursor: pointer;
+    
+}
+
+
+/*para icono de store/carrito */
+#icon-store{
+    margin-top: 3px;
+    margin-left: 65px;
+    height: 1.8em;
+    cursor: pointer;
+}
+
