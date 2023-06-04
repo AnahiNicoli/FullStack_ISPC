@@ -1,5 +1,7 @@
 <div class="filtro">
-    
+<p *ngIf="!userLoginOn">Usuario no identificado</p>
+<p *ngIf="userLoginOn">Usuario identificado</p>
+
    
     <div id="filtros1">
         <select class="form-select" aria-label="Default select example" id="buscando">
