@@ -19,12 +19,25 @@ export class LoginComponent implements OnInit {
 
     }
 
+    get email(){
+      return  this.loginForm.controls.email;
+    }
+
+
+    get password(){
+      return  this.loginForm.controls.password;
+    }
+
+
+
     login(){
       if(this.loginForm.valid){
         console.log ("Llamar al servicio de login");
-        this.router.navigateByUrl('/inicio')
+        this.router.navigateByUrl('/inicio');
+        this.loginForm.reset();
       }
       else {
+        this.loginForm.markAllAsTouched();
         alert ("Error, ingresó cualquier cosa menos la que debía")
       }
     }

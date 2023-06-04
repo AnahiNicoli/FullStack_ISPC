@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+en castellano: acá van los estilos que aplicana todo todo TODO */
+.ng-valid:not(form).ng-touched {
+    border-left:5px solid #42A948;
+}
+
+.ng-invalid:not(form).ng-touched {
+    border-left: 5px solid #a94442;
+}
