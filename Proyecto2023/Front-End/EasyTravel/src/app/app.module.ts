@@ -24,6 +24,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EmpresaComponent } from './pages/empresa/empresa.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
