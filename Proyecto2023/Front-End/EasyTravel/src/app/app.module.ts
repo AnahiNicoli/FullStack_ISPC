@@ -20,6 +20,7 @@ import { CarritoPagarComponent } from './carritoPagar/carrito-pagar/carrito-paga
 import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login/login.component';
 import { RegistroComponent } from './login/registro/registro.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RegistroComponent } from './login/registro/registro.component';
     CarritoPagarComponent,
     PerfilComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
