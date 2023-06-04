@@ -7,6 +7,8 @@ import { CarritoComponent } from './carrito/carrito.component';
 import { ContactanosComponent } from './contactanos/contactanos/contactanos.component';
 import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
 import { FiltroComponent } from './filtro/filtro.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { EmpresaComponent } from './pages/empresa/empresa.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/inicio', pathMatch:'full'},
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path:'carrito', component:CarritoComponent},
   { path:'resultados', component:ResultadosFiltroComponent},
   { path:'filtro', component:FiltroComponent},
+  { path:'productos', component:ProductsComponent},
+  { path:'empresa', component:EmpresaComponent},
   { path:'contactanos', component:ContactanosComponent}
 ];
 

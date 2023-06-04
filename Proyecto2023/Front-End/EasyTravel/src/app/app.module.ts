@@ -22,6 +22,8 @@ import { LoginComponent } from './login/login/login.component';
 import { RegistroComponent } from './login/registro/registro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { EmpresaComponent } from './pages/empresa/empresa.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-
     LoginComponent,
     RegistroComponent,
     DashboardComponent,
-    ResultadosFiltroComponent
+    ResultadosFiltroComponent,
+    ProductsComponent,
+    EmpresaComponent
   ],
   imports: [
     BrowserModule,
