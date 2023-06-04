@@ -3,19 +3,16 @@
     margin-top: 3px;
     margin-left: 65px;
     height: 1.8em;
+    cursor: pointer;
     
 }
-:hover #icon-user{
-    height: 2em;
-}
+
 
 /*para icono de store/carrito */
 #icon-store{
     margin-top: 3px;
     margin-left: 65px;
     height: 1.8em;
-    
+    cursor: pointer;
 }
-:hover #icon-store{
-    height: 2em;
-}
+

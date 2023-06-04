@@ -21,6 +21,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login/login.component';
 import { RegistroComponent } from './login/registro/registro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     PerfilComponent,
     LoginComponent,
     RegistroComponent,
-    DashboardComponent
+    DashboardComponent,
+    ResultadosFiltroComponent
   ],
   imports: [
     BrowserModule,
