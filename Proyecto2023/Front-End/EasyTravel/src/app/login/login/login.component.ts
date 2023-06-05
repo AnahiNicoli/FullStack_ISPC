@@ -43,11 +43,12 @@ export class LoginComponent implements OnInit {
           },
           complete: () => {
             console.info('login completo');
+            this.router.navigateByUrl('/inicio');
+            this.loginForm.reset();
           }
         })
 
-        this.router.navigateByUrl('/inicio');
-        this.loginForm.reset();
+       
       }
       else {
         this.loginForm.markAllAsTouched();
