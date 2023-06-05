@@ -25,6 +25,7 @@ import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-
 import { ProductsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
 import { ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
