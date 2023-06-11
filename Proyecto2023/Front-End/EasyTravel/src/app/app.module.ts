@@ -22,7 +22,7 @@ import { LoginComponent } from './login/login/login.component';
 import { RegistroComponent } from './login/registro/registro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { productsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
@@ -49,7 +49,7 @@ import { HttpClientModule} from '@angular/common/http';
     RegistroComponent,
     DashboardComponent,
     ResultadosFiltroComponent,
-    ProductsComponent,
+    productsComponent,
     EmpresaComponent
   ],
   imports: [

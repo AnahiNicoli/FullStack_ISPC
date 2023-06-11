@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Viaje a Italia",
+      "image": "ruta-imagen-italia.jpg",
+      "bookingDate": "01/07/2023",
+      "startDate": "15/08/2023",
+      "endDate": "30/08/2023",
+      "description": "Disfruta de la belleza de Italia con este paquete de viaje completo.",
+      "price": 2000
+    },
+    {
+      "title": "Viaje a México",
+      "image": "ruta-imagen-mexico.jpg",
+      "bookingDate": "01/07/2023",
+      "startDate": "15/09/2023",
+      "endDate": "30/09/2023",
+      "description": "Descubre las maravillas de México con nuestro paquete de viaje exclusivo.",
+      "price": 1800
+    },
+    {
+      "title": "Viaje a Brasil",
+      "image": "ruta-imagen-brasil.jpg",
+      "bookingDate": "01/07/2023",
+      "startDate": "15/10/2023",
+      "endDate": "30/10/2023",
+      "description": "Sumérgete en la cultura brasileña con este paquete de viaje inolvidable.",
+      "price": 2200
+    }
+  ]
+  

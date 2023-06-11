@@ -1,9 +1,6 @@
-p{
-    padding: .5em;
-    text-align: center;
+#productos{
+    background-color: rgb(75, 72, 72);
 }
-
-#pprovisorio{
-    margin-left: 10em;
-    margin-bottom: 2em;
+h1, h5, p{
+    text-align: center;
 }
