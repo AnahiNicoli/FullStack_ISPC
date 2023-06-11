@@ -5,12 +5,10 @@ Continuación del Repositorio grupal 2º cuatrimestre (2022) del grupo 58<br>
 
 Integrantes: <br>
 GUIDONE, Damián<br>
-ILLBELE, Patricia<br>
 NÍCOLI, Anahí<br>
 SOLIS, Patricia<br>
 SOTO VALENZUELA, Juan Gabriel<br>
-GIANA, DARÍO Nicolas<br>
-NOVILLO, Pablo<br>
+
 
 
 
