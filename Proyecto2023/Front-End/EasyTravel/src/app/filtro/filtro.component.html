@@ -1,6 +1,12 @@
 <div class="filtro">
+  
+<div *ngIf="userLoginOn">
+  <p>Nombre: {{userData?.name}}</p>
+  <p>Apellido: {{userData?.lastName}}</p>
+  <p>Email: {{userData?.email}}</p>
+
+  </div>
 <p *ngIf="!userLoginOn">Usuario no autenticado</p>
-<p *ngIf="userLoginOn">Usuario autenticado</p>
 
    
     <div id="filtros1">
