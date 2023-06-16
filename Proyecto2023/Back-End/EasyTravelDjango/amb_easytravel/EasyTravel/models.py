@@ -13,15 +13,32 @@ class Usuarios(models.Model):
     CELULAR= models.CharField(max_length=30, blank=False)
     PUNTAJE= models.IntegerField
    
-    
+
     class Meta:
         db_table="Usuario"
-        verbose_name= "Usuario de EasyTravel"
-        verbose_name_prural= "Usuarios creados de EasyTravel"
+        verbose_name= "Usuarios de EasyTravel"
+        verbose_name_prural= "Usuarios"
     def _unicode_(self):
         return self.nombre
     def _str_(self):
         return self.nombre
+    
+class Categoria(models.Model):
+    ID_CATEGORIA= models.AutoField(primary_key=True)
+    NOMBRE= models.CharField(max_length=50, blank=False)
+    DETALLE= models.CharField(max_length=100, blank=False)
+    CANTIDAD=models.IntegerField(blank=False, default=0)
+    
+    class Meta:
+        db_table="Categoria"
+        verbose_name= "Categorias de Productos"
+        verbose_name_prural= "Categorias"
+    def _unicode_(self):
+        return self.nombre
+    def _str_(self):
+        return self.nombre
+
+
     
 class Producto(models.Model):
     ID_PRODUCTO= models.AutoField(primary_key=True)
@@ -30,14 +47,20 @@ class Producto(models.Model):
     FECHA_INICIO= models.DateField(blank=False)
     FECHA_FIN= models.DateField(blank=False)
     ACTIVO= models.BooleanField(blank=False)
-    PRECIO= models.IntegerField(blank=False)
+    PRECIO= models.DecimalField(max_length=10, decimal_places=2,blank=False)
     CANTIDAD=models.IntegerField(blank=False, default=0)
+    ID_CATEGORIA = models.ForeignKey(Categoria,to_field="ID_CATEGORIA", on_delete=models.CASCADE)
+
     
     class Meta:
         db_table="Producto"
         verbose_name= "Productos de EasyTravel"
-        verbose_name_prural= "Productos disponibles en EasyTravel"
+        verbose_name_prural= "Productos"
     def _unicode_(self):
         return self.nombre
     def _str_(self):
         return self.nombre
+    
+
+
+    
