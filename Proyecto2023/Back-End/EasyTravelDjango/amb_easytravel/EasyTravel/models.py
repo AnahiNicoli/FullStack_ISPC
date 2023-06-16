@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Usuarios(models.Model):
+
     ID_USUARIO= models.AutoField(primary_key=True)
     NOMBRE= models.CharField(max_length=30, blank=False)
     APELLIDOS= models.CharField(max_length=30, blank=False)
@@ -12,15 +13,13 @@ class Usuarios(models.Model):
     MAIL = models.CharField(max_length=30, blank=False)
     CELULAR= models.CharField(max_length=30, blank=False)
     PUNTAJE= models.IntegerField
-   
-
     class Meta:
         db_table="Usuario"
         verbose_name= "Usuarios de EasyTravel"
-        verbose_name_prural= "Usuarios"
-    def _unicode_(self):
+        verbose_name_prural="Usuarios"
+    def __unicode__(self):
         return self.nombre
-    def _str_(self):
+    def __str__(self):
         return self.nombre
     
 class Categoria(models.Model):
@@ -32,10 +31,10 @@ class Categoria(models.Model):
     class Meta:
         db_table="Categoria"
         verbose_name= "Categorias de Productos"
-        verbose_name_prural= "Categorias"
-    def _unicode_(self):
+        verbose_name_prural="Categorias"
+    def __unicode__(self):
         return self.nombre
-    def _str_(self):
+    def __str__(self):
         return self.nombre
 
 
@@ -55,10 +54,10 @@ class Producto(models.Model):
     class Meta:
         db_table="Producto"
         verbose_name= "Productos de EasyTravel"
-        verbose_name_prural= "Productos"
-    def _unicode_(self):
+        verbose_name_prural="Productos"
+    def __unicode__(self):
         return self.nombre
-    def _str_(self):
+    def __str__(self):
         return self.nombre
     
 
