@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Usuarios(models.Model):
-    ID= models.AutoField(primary_key=True)
+    ID_USUARIO= models.AutoField(primary_key=True)
     NOMBRE= models.CharField(max_length=30, blank=False)
     APELLIDOS= models.CharField(max_length=30, blank=False)
     FECH_NAC= models.DateField(blank=False)
@@ -24,7 +24,7 @@ class Usuarios(models.Model):
         return self.nombre
     
 class Producto(models.Model):
-    ID = models.AutoField(primary_key=True)
+    ID_PRODUCTO= models.AutoField(primary_key=True)
     NOMBRE= models.CharField(max_length=50, blank=False)
     DETALLE= models.CharField(max_length=100, blank=False)
     FECHA_INICIO= models.DateField(blank=False)
