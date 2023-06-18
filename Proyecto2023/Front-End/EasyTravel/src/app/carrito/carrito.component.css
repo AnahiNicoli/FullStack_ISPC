@@ -1,5 +1,3 @@
-
-
 header {background-color: #e2e0dc;
     padding: 1em;
 }
@@ -8,9 +6,8 @@ h4 {
 float: left;
 }
 
-body { background-color: #dddbdb ;
-
-
+body { 
+    background-color: #dddbdb ;
 }
 
 section, aside {background-color: #dddbdb;
@@ -18,12 +15,6 @@ section, aside {background-color: #dddbdb;
 }
 section {float: left;
     width: 70%
-}
-
-aside {
-float: right;
-width: 30%;
-background-color: #dddbdb;
 }
 
 .comprita {
@@ -35,12 +26,7 @@ border-radius: 20px;
 .carrito {
 background-color: white;
 padding: 2em;
-border-radius: 20px;
-}
-
-.sumita {
-background-color: white;
-padding: 2em;
+margin: 2em;
 border-radius: 20px;
 }
 
@@ -48,9 +34,3 @@ h4 {
 float: right;
 }
 
-section img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: bottom;
-}
