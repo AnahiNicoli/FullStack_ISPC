@@ -1,38 +1,27 @@
-
-
-header {background-color: #239398;
-    padding: 1em;
-}
-
 h4 {
 float: left;
 }
 
-body { background-color: #dddbdb ;
-
-
+body { 
+    background-color: #dddbdb ;
 }
 
-section, aside {background-color: #dddbdb;
-            padding: 2em ;
+section, aside {
+    background-color: #dddbdb;
+    padding: 2em ;
 }
-section {float: left;
+section {
+    float: left;
     width: 70%
 }
 
 aside {
 float: right;
-width: 30%;
+width: 100%;
 background-color: #dddbdb;
 }
 
 .comprita {
-background-color: white;
-padding: 2em;
-border-radius: 20px;
-}
-
-.carrito {
 background-color: white;
 padding: 2em;
 border-radius: 20px;
@@ -46,11 +35,4 @@ border-radius: 20px;
 
 h4 {
 float: right;
-}
-
-section img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: bottom;
 }
