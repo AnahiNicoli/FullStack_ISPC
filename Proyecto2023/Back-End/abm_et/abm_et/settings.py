@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'django_rest_passwordreset',
     'easyTravel',
-    'easyTravel.app.EasytravelConfig',
+    
 
 ]
 
