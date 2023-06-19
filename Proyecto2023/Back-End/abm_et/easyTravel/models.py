@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class Usuario(models.Model):
@@ -50,3 +51,8 @@ class Producto(models.Model):
         return self.nombre
     def __str__(self):
         return self.nombre   
+    
+    class CarritoCompras(models.Model):
+        producto_nombre = models.CharField(max_length=200)
+        producto_precio = models.DecimalField(max_length=10, blank=False, decimal_places=2, max_digits=10)
+        producto_cantidad = models.PositiveIntegerField()
