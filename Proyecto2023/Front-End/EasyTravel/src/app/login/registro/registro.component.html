@@ -1,28 +1,81 @@
-<p>registro works!</p>
-<!DOCTYPE html>
-<html>
 <head>
-  <title>Formulario de Validación de Código</title>
+  <title>Formulario de Registro</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <h3>Vamos a validar tu correo electrónico y a crear una contraseña</h3>
-        <form>
+        <h3>Vamos a crear tu cuenta</h3>
+        <form [formGroup]="form" class="form" (ngSubmit)="onEnviar($event, usuario)" >
           <div class="form-group">
-            <label for="code">Ingresá el código que te enviamos por correo electrónico y creá una nueva contraseña</label>
-            <input type="text" class="form-control" id="code" placeholder="Ingresa el código de validación">
+            <label for="nombre">Ingresá tu nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa Tu nombre"
+            formControlName="nombre" [(ngModel)]="usuario.nombre" [class.border-danger]="NombreValid">
+          <div *ngIf="Nombre?.errors && Nombre?.touched">
+          <p *ngIf="Nombre?.hasError('required')" class="text-danger"> El nombre es requerido</p>
           </div>
-          <div class="form-group">
-            <label for="password">Contraseña nueva </label>
-            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña nueva">
           </div>
-          <div class="form-group">
-            <label for="confirm-password">Confirmar Contraseña</label>
-            <input type="password" class="form-control" id="confirm-password" placeholder="Confirma tu contraseña">
+
+          <div class="m-3">
+            <label for="apellido" class="form-label">Ingresá tu apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa Tu apellido"
+            formControlName="apellido" [(ngModel)]="usuario.apellido" [class.border-danger]="ApellidoValid">
+          <div *ngIf="Apellido?.errors && Apellido?.touched">
+          <p *ngIf="Apellido?.hasError('required')" class="text-danger"> El apellido es requerido</p>
           </div>
+          </div>
+
+          <div class="m-3">
+            <label for="dni" class="form-label">Ingresá tu DNI</label>
+            <input type="text" class="form-control" id="dni" placeholder="Ingresa Tu DNI"
+            formControlName="dni" [(ngModel)]="usuario.dni" [class.border-danger]="DNIValid">
+          <div *ngIf="DNI?.errors && DNI?.touched">
+          <p *ngIf="DNI?.hasError('required')" class="text-danger"> El DNI es requerido</p>
+          </div>
+
+          </div> 
+          
+          <div class="m-3">
+            <label for="fechaNac" class="form-label">Ingresá tu fecha de nacimiento</label>
+            <input type="date" class="form-control" id="fechaNac" placeholder="Ingresa Tu fecha de nacimiento"
+            formControlName="fechaNac" [(ngModel)]="usuario.fechaNac" [class.border-danger]="FechaNacValid">
+          <div *ngIf="FechaNac?.errors && FechaNac?.touched">
+          <p *ngIf="FechaNac?.hasError('required')" class="text-danger"> La fecha de nacimiento es requerida</p>
+          </div>
+          </div>
+
+
+          <div class="m-3">
+            <label for="mail" class="form-label">Ingresá tu email</label>
+            <input type="text" class="form-control" id="mail" placeholder="Ingresa tu mail"
+            formControlName="mail" [(ngModel)]="usuario.mail" [class.border-danger]="MailValid">
+          <div *ngIf="Mail?.errors && Mail?.touched">
+          <p *ngIf="Mail?.hasError('required')" class="text-danger"> El mail es requerido</p>
+          </div>
+          </div>
+
+
+          <div class="m-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" id="password" class="form-control" placeholder="Ingresa tu contraseña nueva"
+            formControlName="password1" [class.border-danger]="Password1Valid">
+            <div *ngIf="Password1?.errors && Password1?.touched">
+              <p *ngIf="Password1?.hasError('required')" class="text-danger"> La contraseña es requerida</p>
+            </div>
+          </div>
+
+
+          <div class="m-3">
+            <label for="password2" class="form-label">Repita su contraseña</label>
+            <input type="password2" id="password2" class="form-control" placeholder="Ingresa nuevamente tu contraseña"
+            formControlName="password2" [class.border-danger]="Password2Valid">
+            <div *ngIf="Password2?.errors && Password2?.touched">
+              <p *ngIf="Password2?.hasError('required')" class="text-danger"> La contraseña no coincide</p>
+            </div>
+          </div>
+         
           <button type="submit" class="btn btn-warning" routerLink="/inicio" >Crear</button>
         </form>
       </div>
@@ -33,4 +86,3 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-</html>
