@@ -49,7 +49,7 @@
 
           <div class="m-3">
             <label for="mail" class="form-label">Ingresá tu email</label>
-            <input type="text" class="form-control" id="mail" placeholder="Ingresa tu mail"
+            <input type="email" class="form-control" id="mail" placeholder="Ingresa tu mail"
             formControlName="mail" [(ngModel)]="usuario.mail" [class.border-danger]="MailValid">
           <div *ngIf="Mail?.errors && Mail?.touched">
           <p *ngIf="Mail?.hasError('required')" class="text-danger"> El mail es requerido</p>
