@@ -1,6 +1,35 @@
 #productos{
-    background-color: rgb(75, 72, 72);
+    background-color: rgb(255, 255, 255);
 }
-h1, h5, p{
+
+h1 {
     text-align: center;
+    padding: 1em;
 }
+
+h5, h3 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+p {
+    text-align: center;
+    pad: 0.3em;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .col {
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 4em;
+  }
+
+
+ 

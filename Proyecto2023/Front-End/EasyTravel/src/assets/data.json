@@ -1,7 +1,4 @@
 {
-    "message":"Autenticación ok",
-    "id":"1",
-    "name":"Ani",
-    "lastName":"Nicoli",
-    "email":"ani@gmail.com"
+    "email":"ani@gmail.com",
+    "password":"1234"
 }
