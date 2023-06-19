@@ -10,6 +10,7 @@ import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-
 import { FiltroComponent } from './filtro/filtro.component';
 import { productsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
+import { CarritoPagarComponent } from './carritoPagar/carrito-pagar/carrito-pagar.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/inicio', pathMatch:'full'},
@@ -22,7 +23,9 @@ const routes: Routes = [
   { path:'filtro', component:FiltroComponent},
   { path:'productos', component:productsComponent},
   { path:'empresa', component:EmpresaComponent},
-  { path:'contactanos', component:ContactanosComponent}
+  { path:'contactanos', component:ContactanosComponent},
+  { path: 'pagar', component: CarritoPagarComponent}
+
 ];
 
 @NgModule({
