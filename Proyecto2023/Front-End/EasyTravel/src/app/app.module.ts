@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
@@ -25,7 +26,10 @@ import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-
 import { productsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
 import { ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { JwtInterceptor } from './services/auth/interceptor.service';
+import { ErrorInterceptor } from './services/auth/error.interceptor.service';
+import { UsuarioService } from './services/auth/usuario.service';
 
 @NgModule({
   declarations: [
@@ -58,7 +62,10 @@ import { HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ UsuarioService, 
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi:true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
