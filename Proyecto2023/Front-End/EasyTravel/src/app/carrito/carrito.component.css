@@ -2,9 +2,12 @@ header {background-color: #e2e0dc;
     padding: 1em;
 }
 
-h4 {
-float: left;
-}
+
+header {
+    float: center;
+    text-align: center;
+    padding: 1em;
+    }
 
 body { 
     background-color: #dddbdb ;

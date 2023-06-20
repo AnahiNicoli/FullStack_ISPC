@@ -1,0 +1,20 @@
+<article class="producto" *ngFor="let product of products">
+  <!--cuando coloco el ngFor deja de andar en el front pero si lo saco 
+  tira error el databinding  -->
+  <div class="tarjeta">
+<div class="card h-100" *ngFor="let product of products">
+    <img src="{{product.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{product.title}}</h3>
+      <p class="card-text">{{product.description}}</p>
+      <h5 class="card-text"> $ {{product.price}}</h5>
+      <!-- $: {{item.precio | number: '.2'}} -->
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-success" type="button" (click)="addToCart(product)">Agregar al carrito</button>
+        <!--(click)="agregarCarrito(item)"-->
+        <i class="bi bi-basquet"></i>
+      </div>
+    </div>
+  </div>
+</article>

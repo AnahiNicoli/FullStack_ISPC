@@ -1,0 +1,30 @@
+<div class="productCart-wrapper">
+    <article class="productCart" *ngFor="let product of myCart$ | async ">
+        <div class="productCart-body">
+            <p> {{product.title}}</p>
+            <div class="productCart-body-info">
+                <P>{{product.price}}</P>
+            <!--<p> Precio</p> quitar cuando funcione el databinding-->
+                <p>{{ product.cantidad }}</p>
+            </div>
+        </div>
+
+    <div class="productoCart-total"> 
+        <p> ${{ totalProduct(product.price, product.cantidad)}} </p>
+    </div>
+
+    <div class="productoCart-buttons">
+        <div class="productoCart-buttons-operators">
+            <i class="fa-solid fa-minus" (click)="updateUnits('minus', product.id)"></i>
+            <span>{{product.cantidad}}</span>
+            <i class="fa-solid fa-plus" (click)="updateUnits('add', product.id)"> </i>
+        </div>
+            <i class="fa-solid fa-trash" (click)="deleteProduct(product.id)"></i>
+    </div>
+</article>
+
+<div class="cartTotal"> 
+    <P class="cartTotal-total"> Total: $ {{totalCart}} </P>    
+</div>
+<button class="btn btn-success"> Ver carrito </button>
+</div>
