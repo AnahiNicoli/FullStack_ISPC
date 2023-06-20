@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'abm_et.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '0easytravel_bdd',
+        'NAME': '0abm_et',
         'USER': 'root',
         'PASSWORD':'Terminal02',
         'HOST': 'localhost',
