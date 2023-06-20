@@ -11,22 +11,44 @@ export class CarritoComponent implements OnInit {
 
   products:Product[]=[];
 
-  constructor(private storeService: StoreService) {}
+  
+  myCart$ = this.storeService.myCart$;
 
-  ngOnInit(): void {
+  viewCart : boolean = false;
 
-    this.getProducts();
+  constructor(private storeService:StoreService) {}
+
+  updateUnits(operation:string, id:string){
+    const product = this.storeService.findProductById(id)
+    if(product){
+      if(operation === 'minus' && product.cantidad> 0){
+      product.cantidad = product.cantidad - 1;
+    }
+    if (operation === 'add'){
+      product.cantidad = product.cantidad + 1;
+    }
+    if(product.cantidad === 0){
+      this.deleteProduct(id);
+    }
   }
 
-//Método para traer la lista de productos
-getProducts(){
-  this.storeService.getAllProducts().subscribe((data)=>
-  {
-    return this.products = data;
-  })
 }
 
-addToCart(product:Product){
-  return this.storeService.addProduct(product);
+  ngOnInit(): void {
+  }
+
+  totalProduct(price:number, units: number){
+    return price * units
+  }
+
+  deleteProduct(id:string){
+    this.storeService.deleteProduct(id);
+  }
+
+
+totalCart(){
+  const result = this.storeService.totalCart();
+  return result
 }
+
 }

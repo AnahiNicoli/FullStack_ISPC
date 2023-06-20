@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit {
       }
       else {
         this.loginForm.markAllAsTouched();
-        alert ("Error, ingresó cualquier cosa menos la que debía")
+        alert ("Error, revise sus datos")
       }
     }
   }
