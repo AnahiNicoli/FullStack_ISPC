@@ -25,7 +25,7 @@
                     <th scope="row">{{product.title}}</th>
                     <td>{{product.description}}</td>
                     <td>{{product.price}}</td>
-                    <td>Cantidad</td>
+                    <td >{{product.cantidad}}</td>
                     <td>${{ totalProduct(product.price, product.cantidad)}}</td>
                     <td><button  figure class="text-center" (click)="updateUnits('minus', product.id)">X</button></td>
                 </tr>
@@ -53,7 +53,7 @@
        
         <div class="d-grid gap-2 col-6 mx-auto">
                 
-            <button  class="btn btn-dark" type="button">Vaciar carrito</button>
+            <button  class="btn btn-dark" type="button" >Vaciar carrito</button>
         
             </div>
                 
