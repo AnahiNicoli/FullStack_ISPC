@@ -7,6 +7,9 @@ import { LoginService } from '../services/auth/login.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit, OnDestroy{
+
+  mostrarCart: boolean = false;
+
   userLoginOn:boolean=false 
   constructor (private loginService:LoginService) {}
 
@@ -22,6 +25,10 @@ ngOnInit(): void {
       }
     }
   )
+}
+
+onToggleCart(){
+  this.mostrarCart = !this.mostrarCart
 }
 
 }

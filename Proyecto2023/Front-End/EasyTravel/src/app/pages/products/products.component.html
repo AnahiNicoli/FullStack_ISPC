@@ -1,30 +1,44 @@
 <div id="productos">
     <H1> Ofertas impredibles</H1>
+
+<div class= "container"> 
+<div class="app">
+  <app-viaje></app-viaje>
+</div>
+</div>
+
+
     <div class="row row-cols-3">
         <div class="col">
          <!-- <div class="d-flex justify-content-end"> -->
           <div class="card h-100">
             <img src="../productos/../../../assets/img/Italia.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Italia</h5>
-              <p class="card-text">Recorré las históricas calles y ciudades de Italia, aprendé a decir ma perqué </p>
-              <h3 class="card-text">Precio.</h3>
+              <h3 class="card-title">Italia</h3>
+              <p class="card-text">Recorré las históricas calles y ciudades de Italia. </p>
+              <h5 class="card-text">  </h5>
+              <!-- $: {{item.precio | number: '.2'}} -->
             </div>
             <div class="card-footer">
-              <button class="btn btn-success" type="button" routerLink="/carrito">Agregar al carrito</button>
+              <button class="btn btn-success" type="button" >Agregar al carrito</button>
+              <!--(click)="agregarCarrito(item)"-->
+              <i class="bi bi-basquet"></i>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100"> 
             <img src="../productos/../../../assets/img/Brasil.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Brasil</h5>
-              <p class="card-text">Playas paradisíacas, un calor de morirse y gente hinchando las pelotas</p>    
-              <h3 class="card-text">Precio.</h3>
+              <h3 class="card-title">Brasil</h3>
+              <p class="card-text">Playas paradisíacas, clima tropical, lo mejor para vos de éste increíble país.</p>    
+              <h5 class="card-text">Precio.</h5>
             </div>
             <div class="card-footer">
-              <button class="btn btn-success" type="button" routerLink="/carrito">Agregar al carrito</button>
+              <button class="btn btn-success" type="button" >Agregar al carrito</button>   
+                         <!--(click)="agregarCarrito(item)"-->
+
+
             </div>
           </div>
         </div>
@@ -32,12 +46,14 @@
           <div class="card h-100">
             <img src="../productos/../../../assets/img/Mexico.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Mexico</h5>
-              <p class="card-text">Te sugerimos que no compres comida en la calle.</p>
-              <h3 class="card-text">Precio.</h3>
+              <h3 class="card-title">Mexico</h3>
+              <p class="card-text"></p>Disfrutá de México de punta a punta con nuestros paquetes hechos a medida.
+              <h5 class="card-text">Precio.</h5>
             </div>
             <div class="card-footer">
-              <button class="btn btn-success" type="button" routerLink="/carrito">Agregar al carrito</button>
+              <button class="btn btn-success" type="button">Agregar al carrito</button>
+                            <!--(click)="agregarCarrito(item)"-->
+
             </div>
           </div>
         </div>

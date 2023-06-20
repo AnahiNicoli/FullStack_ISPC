@@ -24,6 +24,20 @@
           <a class="nav-link disabled text-success" href="#ayuda">Ayuda</a>
         </li>
         <img src="../../assets/img/Icons/store-solidWhite.svg" alt="store" routerLink="carrito" id="icon-store">
+<!--
+        <div class="navbar-cart" (click)="onToggleCart()">
+          <div class="navbar-cart-items">  este es el deplegable para ver ítems
+          <p class="cant">0</p>     este ítem se va a actualizar con el taiescrí
+          <i class="fa-solid fa-store" style="color: #ffff80;"></i>
+        </div>
+        </div> 
+
+        <div cass="cart" [ngClass]="{mostrar:mostrarCart}">
+
+  <app-cart></app-cart>
+</div>
+    ESTE ES EL CARRITO NUEVO DEL NAV QUE SE SACA HASTA QUE FUNCIONE-->
+        
         <img src="../../assets/img/Icons/user-solid.svg" *ngIf="!userLoginOn" alt="Iniciar Sesión" routerLink="login" id="icon-user">
         <img src="../../assets/img/Icons/user-solid.svg" *ngIf="userLoginOn" alt="Cerrar Sesión" routerLink="login" id="icon-user1">
 
@@ -31,3 +45,4 @@
     </div>
   </div>
 </nav>
+

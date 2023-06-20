@@ -23,13 +23,15 @@ import { LoginComponent } from './login/login/login.component';
 import { RegistroComponent } from './login/registro/registro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ResultadosFiltroComponent } from './pages/resultados-filtro/resultados-filtro.component';
-import { productsComponent } from './pages/products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { JwtInterceptor } from './services/auth/interceptor.service';
 import { ErrorInterceptor } from './services/auth/error.interceptor.service';
 import { UsuarioService } from './services/auth/usuario.service';
+import { CartComponent } from './cart/cart/cart.component';
+import { ViajeComponent } from './viaje/viaje/viaje.component';
 
 @NgModule({
   declarations: [
@@ -53,8 +55,10 @@ import { UsuarioService } from './services/auth/usuario.service';
     RegistroComponent,
     DashboardComponent,
     ResultadosFiltroComponent,
-    productsComponent,
-    EmpresaComponent
+    ProductsComponent,
+    EmpresaComponent,
+    CartComponent,
+    ViajeComponent
   ],
   imports: [
     BrowserModule,

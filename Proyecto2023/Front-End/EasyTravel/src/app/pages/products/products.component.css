@@ -17,19 +17,39 @@ p {
     pad: 0.3em;
 }
 
-.card {
+.card { /*esto es de las tarjetas de abajo*/
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
   }
 
-  .col {
-    align-items: center;
+  .col { /*esto es de las tarjetas de abajo*/
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 4em;
   }
 
+  .container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  }
+
+  .app {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+    }
+
+
+
+
+ 
+  
+  
+ 
 
  

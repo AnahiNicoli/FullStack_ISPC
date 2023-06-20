@@ -1,4 +1,10 @@
 /*para icono de usuario/login*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #icon-user{
     margin-top: 3px;
     margin-left: 65px;
@@ -26,4 +32,52 @@
     cursor: pointer;
     color: azure;
 }
+
+.navbar-cart {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.navbar-cart-items {
+    position: relative;
+    margin-right: 1rem;
+    left: 8.5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(238, 255, 0);
+    height: 20px;
+    width: 20px;
+
+}
+
+.cant {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.cart {
+    position: relative;
+    display: none;
+    
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    border: 1px solid #108800;
+    right: 0px;
+    top: 83px;
+    min-width: 40%;
+    
+  
+}
+
+
 
